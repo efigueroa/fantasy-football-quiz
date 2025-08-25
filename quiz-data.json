@@ -1,282 +1,366 @@
 [
   {
-    "question": "What city are the Green Bay Packers based in?",
-    "answer": "Green Bay, Wisconsin"
+    "question": "Which team is called the Dirty Birds?",
+    "answer": "Falcons"
   },
   {
-    "question": "Which team plays in Foxborough, Massachusetts?",
-    "answer": "New England Patriots"
+    "question": "Which NFL team has a star on its helmet?",
+    "answer": "Cowboys"
   },
   {
-    "question": "What bird is the mascot for the Philadelphia NFL team?",
-    "answer": "Eagle (Philadelphia Eagles)"
+    "question": "Who won the first Super Bowl?",
+    "answer": "Packers"
   },
   {
-    "question": "What city are the Raiders currently based in?",
+    "question": "Which team plays in Lambeau Field?",
+    "answer": "Packers"
+  },
+  {
+    "question": "Which city are the Raiders currently based in?",
     "answer": "Las Vegas"
   },
   {
-    "question": "Which team plays its home games at Lambeau Field?",
-    "answer": "Green Bay Packers"
+    "question": "Who is the NFL all-time leader in passing touchdowns?",
+    "answer": "Tom Brady"
   },
   {
-    "question": "What city do the Seahawks represent?",
-    "answer": "Seattle"
+    "question": "Which team has won the most Super Bowls?",
+    "answer": "Patriots"
   },
   {
-    "question": "What team is known as 'America’s Team'?",
-    "answer": "Dallas Cowboys"
+    "question": "Which team has the most Super Bowl losses?",
+    "answer": "Patriots"
   },
   {
-    "question": "Which team’s colors are black and yellow?",
-    "answer": "Pittsburgh Steelers"
+    "question": "Who is known as 'The Bus'?",
+    "answer": "Jerome Bettis"
+  },
+  {
+    "question": "What team does Patrick Mahomes play for?",
+    "answer": "Chiefs"
+  },
+  {
+    "question": "Which team is nicknamed 'America's Team'?",
+    "answer": "Cowboys"
+  },
+  {
+    "question": "Who holds the record for most rushing yards in a season?",
+    "answer": "Eric Dickerson"
+  },
+  {
+    "question": "Which team is known for the 'Steel Curtain' defense?",
+    "answer": "Steelers"
+  },
+  {
+    "question": "What city are the Eagles from?",
+    "answer": "Philadelphia"
+  },
+  {
+    "question": "Who was the first player drafted in the 2023 NFL Draft?",
+    "answer": "Bryce Young"
+  },
+  {
+    "question": "What is the name of the Super Bowl trophy?",
+    "answer": "Lombardi Trophy"
+  },
+  {
+    "question": "Which team has a lightning bolt logo?",
+    "answer": "Chargers"
+  },
+  {
+    "question": "Who is the NFL commissioner?",
+    "answer": "Roger Goodell"
   },
   {
     "question": "Which team plays at Arrowhead Stadium?",
-    "answer": "Kansas City Chiefs"
+    "answer": "Chiefs"
   },
   {
-    "question": "The Jets and Giants share a stadium in what state?",
-    "answer": "New Jersey"
+    "question": "What team wears black and gold and is based in Pittsburgh?",
+    "answer": "Steelers"
   },
   {
-    "question": "Which team is the oldest in the NFL?",
-    "answer": "Arizona Cardinals"
+    "question": "Which quarterback is known for 'The Immaculate Reception'?",
+    "answer": "Terry Bradshaw"
   },
   {
-    "question": "The Chicago Bears were originally known by what name?",
-    "answer": "Decatur Staleys"
+    "question": "Who won Super Bowl 50?",
+    "answer": "Broncos"
   },
   {
-    "question": "Which team joined the NFL most recently?",
-    "answer": "Houston Texans"
+    "question": "Which wide receiver was known as 'Megatron'?",
+    "answer": "Calvin Johnson"
   },
   {
-    "question": "What year did the Houston Texans begin play?",
-    "answer": "2002"
+    "question": "Which team did Tom Brady finish his career with?",
+    "answer": "Buccaneers"
   },
   {
-    "question": "Which team was originally based in Cleveland before moving to Baltimore?",
-    "answer": "Baltimore Ravens"
+    "question": "Who was the quarterback for the 1972 undefeated Dolphins?",
+    "answer": "Bob Griese"
   },
   {
-    "question": "Which team moved to Los Angeles in 2016 after playing in St. Louis?",
-    "answer": "Los Angeles Rams"
+    "question": "Which team has a cannon that fires after touchdowns?",
+    "answer": "Buccaneers"
   },
   {
-    "question": "What NFL team originally played in Dallas before moving to Kansas City?",
-    "answer": "Kansas City Chiefs"
+    "question": "Which NFL team plays in Seattle?",
+    "answer": "Seahawks"
   },
   {
-    "question": "The Titans were once known by what name?",
-    "answer": "Houston Oilers"
+    "question": "What team does Justin Jefferson play for?",
+    "answer": "Vikings"
   },
   {
-    "question": "Which team started in 1966 and has a 'halo' logo?",
-    "answer": "New Orleans Saints"
+    "question": "Who holds the record for most career receiving yards?",
+    "answer": "Jerry Rice"
   },
   {
-    "question": "The Ravens’ name was inspired by a poem by which famous author?",
-    "answer": "Edgar Allan Poe"
+    "question": "Which team is known as the 'Monsters of the Midway'?",
+    "answer": "Bears"
   },
   {
-    "question": "Which team has the most Super Bowl wins?",
-    "answer": "Pittsburgh Steelers & New England Patriots (6 each)"
+    "question": "What NFL team is based in Denver?",
+    "answer": "Broncos"
   },
   {
-    "question": "Which two teams are tied for the most Super Bowl victories at 6 each?",
-    "answer": "Steelers & Patriots"
-  },
-  {
-    "question": "Which team won the very first Super Bowl?",
-    "answer": "Green Bay Packers"
-  },
-  {
-    "question": "Who did the Patriots defeat in Super Bowl LI (the 28–3 comeback)?",
-    "answer": "Atlanta Falcons"
-  },
-  {
-    "question": "Which team lost four straight Super Bowls in the 1990s?",
-    "answer": "Buffalo Bills"
-  },
-  {
-    "question": "What city hosted the first Super Bowl?",
-    "answer": "Los Angeles"
-  },
-  {
-    "question": "Who did the Rams defeat in Super Bowl LVI?",
-    "answer": "Cincinnati Bengals"
-  },
-  {
-    "question": "What team won the 'perfect season' Super Bowl in 1972?",
-    "answer": "Miami Dolphins"
-  },
-  {
-    "question": "Which team won the Super Bowl immediately after Hurricane Katrina?",
-    "answer": "New Orleans Saints"
-  },
-  {
-    "question": "Which team’s first Super Bowl win came in 2022?",
-    "answer": "Los Angeles Rams"
-  },
-  {
-    "question": "What is the mascot of the Denver Broncos?",
-    "answer": "Thunder (live horse)"
-  },
-  {
-    "question": "The 'Dirty Birds' is a nickname for which team?",
-    "answer": "Atlanta Falcons"
-  },
-  {
-    "question": "Who are called the 'Cheeseheads'?",
-    "answer": "Green Bay Packers fans"
-  },
-  {
-    "question": "The 'Who Dat Nation' supports which NFL team?",
-    "answer": "New Orleans Saints"
-  },
-  {
-    "question": "Which team’s fans perform the 'Skol' chant?",
-    "answer": "Minnesota Vikings"
-  },
-  {
-    "question": "What team is nicknamed 'Da Bears'?",
-    "answer": "Chicago Bears"
-  },
-  {
-    "question": "Which team’s mascot is 'Swoop'?",
-    "answer": "Philadelphia Eagles"
-  },
-  {
-    "question": "Which team’s official mascot is a giant cat named 'Jaxson de Ville'?",
-    "answer": "Jacksonville Jaguars"
-  },
-  {
-    "question": "What is the Kansas City Chiefs’ wolf mascot named?",
-    "answer": "K. C. Wolf"
-  },
-  {
-    "question": "Which team’s fans are called the '12th Man'?",
-    "answer": "Seattle Seahawks"
+    "question": "Who was the MVP of Super Bowl LV?",
+    "answer": "Tom Brady"
   },
   {
     "question": "Which team plays at Soldier Field?",
-    "answer": "Chicago Bears"
+    "answer": "Bears"
   },
   {
-    "question": "What team calls Levi’s Stadium home?",
-    "answer": "San Francisco 49ers"
+    "question": "Which franchise drafted Peyton Manning?",
+    "answer": "Colts"
   },
   {
-    "question": "Which stadium is the loudest in the NFL?",
-    "answer": "Arrowhead Stadium (Kansas City Chiefs)"
+    "question": "What team is associated with the 'Who Dat' chant?",
+    "answer": "Saints"
   },
   {
-    "question": "What team plays its home games at AT&T Stadium?",
-    "answer": "Dallas Cowboys"
+    "question": "What is the name of the 49ers' stadium?",
+    "answer": "Levi's Stadium"
   },
   {
-    "question": "Which stadium features a pirate ship?",
-    "answer": "Raymond James Stadium (Tampa Bay Buccaneers)"
+    "question": "Who is known for the 'Lambeau Leap'?",
+    "answer": "Packers"
   },
   {
-    "question": "Which stadium is nicknamed 'The Jungle'?",
-    "answer": "Paycor Stadium (Cincinnati Bengals)"
+    "question": "Which team has a tiger-striped helmet?",
+    "answer": "Bengals"
   },
   {
-    "question": "Which team plays at U.S. Bank Stadium?",
-    "answer": "Minnesota Vikings"
+    "question": "Which team plays at MetLife Stadium along with the Giants?",
+    "answer": "Jets"
   },
   {
-    "question": "What team’s stadium has an open roof and giant video board in Las Vegas?",
-    "answer": "Allegiant Stadium (Las Vegas Raiders)"
+    "question": "What color are the Miami Dolphins' home jerseys?",
+    "answer": "Aqua"
   },
   {
-    "question": "Which team’s home stadium is nicknamed 'The Linc'?",
-    "answer": "Philadelphia Eagles"
+    "question": "Which team drafted Joe Burrow?",
+    "answer": "Bengals"
   },
   {
-    "question": "What team plays at Hard Rock Stadium?",
-    "answer": "Miami Dolphins"
+    "question": "Which team has a logo with a horse and lightning bolt?",
+    "answer": "Chargers"
   },
   {
-    "question": "What two teams play in the 'Battle of Ohio'?",
-    "answer": "Cincinnati Bengals & Cleveland Browns"
+"question": "What was the former name of the Washington Commanders?",
+    "answer": "Redskins"
   },
   {
-    "question": "The Cowboys’ biggest rival is often considered which team?",
-    "answer": "Washington Commanders"
+    "question": "Which player famously wore number 16 for the 49ers?",
+    "answer": "Joe Montana"
   },
   {
-    "question": "The 'Iron Bowl of the NFL' is between the Ravens and which team?",
-    "answer": "Pittsburgh Steelers"
+    "question": "What team does Aaron Rodgers currently play for?",
+    "answer": "Steelers"
   },
   {
-    "question": "The NFC North rivalry between the Bears and Packers is the NFL’s ___ rivalry.",
-    "answer": "Oldest"
+    "question": "Who was the MVP of Super Bowl LVI?",
+    "answer": "Cooper Kupp"
   },
   {
-    "question": "The 'Subway Series' refers to the Jets vs. which team?",
-    "answer": "New York Giants"
+    "question": "What NFL team is based in Arizona?",
+    "answer": "Cardinals"
   },
   {
-    "question": "The 'Freeway Series' features the Rams and which other team?",
-    "answer": "Los Angeles Chargers"
+    "question": "Who is the head coach of the Patriots after Bill Belichick?",
+    "answer": "Jerod Mayo"
   },
   {
-    "question": "The Steelers and Browns rivalry is part of which division?",
-    "answer": "AFC North"
+    "question": "Which team is known as the 'Purple People Eaters'?",
+    "answer": "Vikings"
   },
   {
-    "question": "Which team is the main rival of the San Francisco 49ers?",
-    "answer": "Dallas Cowboys (modern), also Seahawks & Rams historically"
+    "question": "Which quarterback is famous for the 'Helmet Catch' Super Bowl?",
+    "answer": "Eli Manning"
   },
   {
-    "question": "The 'Bayou Classic' rivalry involves the Falcons and which team?",
-    "answer": "New Orleans Saints"
+    "question": "Which team’s mascot is named Swoop?",
+    "answer": "Eagles"
   },
   {
-    "question": "The Commanders have a historic rivalry with which NFC East team?",
-    "answer": "Dallas Cowboys"
+    "question": "Which team drafted Trevor Lawrence?",
+    "answer": "Jaguars"
   },
   {
-    "question": "Which team went 0–16 in 2008?",
-    "answer": "Detroit Lions"
+    "question": "Which NFL team has a fleur-de-lis on its helmet?",
+    "answer": "Saints"
   },
   {
-    "question": "Which team drafted Tom Brady in 2000?",
-    "answer": "New England Patriots"
+    "question": "What team is based in Buffalo?",
+    "answer": "Bills"
   },
   {
-    "question": "The 'Hail Mary' play is most associated with which team’s history?",
-    "answer": "Dallas Cowboys"
+    "question": "Which player holds the record for most career sacks?",
+    "answer": "Bruce Smith"
   },
   {
-    "question": "Which team once had a quarterback nicknamed 'Broadway Joe'?",
-    "answer": "New York Jets (Joe Namath)"
+    "question": "Which team did Randy Moss play for as a rookie?",
+    "answer": "Vikings"
   },
   {
-    "question": "The 'Purple People Eaters' were part of which team’s defense?",
-    "answer": "Minnesota Vikings"
+    "question": "Which NFL team has a horn on its helmet?",
+    "answer": "Vikings"
   },
   {
-    "question": "Which team’s fight song is 'Fly, Eagles Fly'?",
-    "answer": "Philadelphia Eagles"
+    "question": "Which team plays at Ford Field?",
+    "answer": "Lions"
   },
   {
-    "question": "Which team’s logo features a lightning bolt?",
-    "answer": "Los Angeles Chargers"
+    "question": "Which team was founded by George Halas?",
+    "answer": "Bears"
   },
   {
-    "question": "Which team once had a running back nicknamed 'Beast Mode'?",
-    "answer": "Seattle Seahawks (Marshawn Lynch)"
+    "question": "Which team won Super Bowl XL?",
+    "answer": "Steelers"
   },
   {
-    "question": "Which team has a star on its helmet?",
-    "answer": "Dallas Cowboys"
+    "question": "Which team did Deion Sanders win a Super Bowl with?",
+    "answer": "49ers"
   },
   {
-    "question": "What team has a logo featuring a flaming thumbtack-like sword?",
-    "answer": "Tennessee Titans"
+    "question": "Which team was featured in the 'Music City Miracle'?",
+    "answer": "Titans"
+  },
+  {
+    "question": "What is the term for when a player scores 6 points?",
+    "answer": "Touchdown"
+  },
+  {
+    "question": "Which team plays at AT&T Stadium?",
+    "answer": "Cowboys"
+  },
+  {
+    "question": "Which team did Eli Manning refuse to play for when drafted?",
+    "answer": "Chargers"
+  },
+  {
+    "question": "What team does Christian McCaffrey currently play for?",
+    "answer": "49ers"
+  },
+  {
+    "question": "Which team’s fans are known as the '12th Man'?",
+    "answer": "Seahawks"
+  },
+  {
+    "question": "Which player won MVP in 2022?",
+    "answer": "Patrick Mahomes"
+  },
+  {
+    "question": "Which stadium is shared by the Rams and Chargers?",
+    "answer": "SoFi Stadium"
+  },
+  {
+    "question": "Which team is the oldest in the NFL?",
+    "answer": "Cardinals"
+  },
+  {
+    "question": "Which team drafted Tony Romo?",
+    "answer": "Cowboys"
+  },
+  {
+    "question": "Which team wears silver and black?",
+    "answer": "Raiders"
+  },
+  {
+    "question": "What team plays in Charlotte, North Carolina?",
+    "answer": "Panthers"
+  },
+  {
+    "question": "Which team has a horse named Thunder run on the field?",
+    "answer": "Broncos"
+  },
+  {
+    "question": "What is the name of the trophy given to the NFC Champion?",
+    "answer": "George Halas Trophy"
+  },
+  {
+    "question": "Which team did Brett Favre start his career with?",
+    "answer": "Falcons"
+  },
+  {
+    "question": "Which team drafted Odell Beckham Jr.?",
+    "answer": "Giants"
+  },
+  {
+    "question": "Which NFL team plays in Kansas City?",
+    "answer": "Chiefs"
+  },
+  {
+    "question": "What team did the Houston Texans replace in the NFL?",
+    "answer": "Oilers"
+  },
+  {
+    "question": "Which team is known for the 'No Fly Zone' defense?",
+    "answer": "Broncos"
+  },
+  {
+    "question": "What is the maximum number of players on the field per team?",
+    "answer": "11"
+  },
+  {
+    "question": "Which team was formerly known as the Houston Oilers?",
+    "answer": "Titans"
+  },
+  {
+    "question": "What team did Reggie White finish his career with?",
+    "answer": "Panthers"
+  },
+  {
+    "question": "Who won Super Bowl XLIX?",
+"answer": "Patriots"
+  },
+  {
+    "question": "Who is the all-time leader in career interceptions?",
+    "answer": "Paul Krause"
+  },
+  {
+    "question": "Which quarterback was nicknamed 'Broadway Joe'?",
+    "answer": "Joe Namath"
+  },
+  {
+    "question": "Who caught the 'Helmet Catch' in Super Bowl XLII?",
+    "answer": "David Tyree"
+  },
+  {
+    "question": "Which team has a dolphin as its mascot?",
+    "answer": "Dolphins"
+  },
+  {
+    "question": "Which team has won the NFC East the most times?",
+    "answer": "Cowboys"
+  },
+  {
+    "question": "Which team has the 'Bolt Up' slogan?",
+    "answer": "Chargers"
+  },
+  {
+    "question": "Which city is home to the NFL Hall of Fame?",
+    "answer": "Canton"
   }
 ]
