@@ -1,7 +1,7 @@
 
 # 🏈 Fig Fam Draft Quiz 🏈
 
-This site was spat out in an afternoon and strictly meant to be used for my family's fantasy football draft game.
+This site was vibe coded and spat out in an afternoon and strictly meant to be used for my family's fantasy football draft game.
 
 Site: [ffquiz.figgy.foo](https://ffquiz.figgy.foo/)
 
@@ -9,3 +9,6 @@ Site: [ffquiz.figgy.foo](https://ffquiz.figgy.foo/)
 - Chip System: Start with 1 chip, earn more for correct answers
 - Legend: ⭐ for correct, ❌ for wrong, ⚪ for unanswered
 
+<div align="center">
+  <img src="game-screenshot.jpg" alt="Game Screenshot" width="300">
+</div>
