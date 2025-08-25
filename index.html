@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fantasy Football Quiz</title>
+    <title>Fig Fam Draft Quiz</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         
@@ -18,8 +18,8 @@
             background: #0f0f23;
             color: #e2e8f0;
             min-height: 100vh;
-            padding: 20px;
-            line-height: 1.6;
+            padding: 12px;
+            line-height: 1.5;
         }
         
         .container {
@@ -27,17 +27,17 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            gap: 20px;
+            gap: 16px;
             align-items: start;
-            min-height: calc(100vh - 40px);
+            min-height: calc(100vh - 24px);
         }
         
         .header-section {
             grid-column: 1 / 8;
             grid-row: 1;
             background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-            border-radius: 24px;
-            padding: 40px;
+            border-radius: 20px;
+            padding: 28px;
             position: relative;
             overflow: hidden;
         }
@@ -47,22 +47,22 @@
             position: absolute;
             top: 0;
             right: 0;
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             background: radial-gradient(circle, rgba(34, 197, 94, 0.1) 0%, transparent 70%);
             transform: translate(50%, -50%);
         }
         
         .header h1 {
-            font-size: 3rem;
+            font-size: 2.2rem;
             font-weight: 700;
             color: #ffffff;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             letter-spacing: -0.02em;
         }
         
         .header .subtitle {
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             color: #94a3b8;
             font-weight: 400;
         }
@@ -72,13 +72,13 @@
             grid-row: 1;
             background: #22c55e;
             border-radius: 16px;
-            padding: 32px;
+            padding: 24px;
             color: #ffffff;
-            transform: translateY(40px);
+            transform: translateY(30px);
         }
         
         .stats-card .label {
-            font-size: 0.875rem;
+            font-size: 0.8rem;
             font-weight: 500;
             opacity: 0.9;
             text-transform: uppercase;
@@ -86,10 +86,10 @@
         }
         
         .stats-card .value {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
             line-height: 1;
-            margin-top: 8px;
+            margin-top: 6px;
         }
         
         .question-card {
@@ -97,7 +97,7 @@
             grid-row: 2;
             background: #1e293b;
             border-radius: 20px;
-            padding: 48px;
+            padding: 32px;
             border: 1px solid #334155;
             position: relative;
         }
@@ -108,25 +108,25 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 4px;
+            height: 3px;
             background: linear-gradient(90deg, #3b82f6, #22c55e);
             border-radius: 20px 20px 0 0;
         }
         
         .question-text {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: 500;
             color: #ffffff;
-            line-height: 1.4;
-            margin-bottom: 32px;
+            line-height: 1.3;
+            margin-bottom: 24px;
         }
         
         .answer-card {
             background: #065f46;
             border: 1px solid #10b981;
             border-radius: 16px;
-            padding: 32px;
-            margin-top: 24px;
+            padding: 24px;
+            margin-top: 20px;
             opacity: 0;
             transform: translateY(20px);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -138,10 +138,10 @@
         }
         
         .answer-text {
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             font-weight: 500;
             color: #ffffff;
-            line-height: 1.4;
+            line-height: 1.3;
         }
         
         .controls-section {
@@ -149,9 +149,9 @@
             grid-row: 2;
             display: flex;
             flex-direction: column;
-            gap: 16px;
+            gap: 12px;
             align-self: end;
-            transform: translateY(-20px);
+            transform: translateY(-16px);
         }
         
         .btn {
@@ -159,8 +159,8 @@
             color: #1e293b;
             border: none;
             border-radius: 12px;
-            padding: 16px 24px;
-            font-size: 1rem;
+            padding: 12px 20px;
+            font-size: 0.9rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -187,8 +187,8 @@
         }
         
         .btn:disabled {
-            background: #475569;
-            color: #94a3b8;
+            background: #475569 !important;
+            color: #94a3b8 !important;
             cursor: not-allowed;
             transform: none;
         }
@@ -204,7 +204,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 24px 0;
+            padding: 16px 0;
         }
         
         .nav-btn {
@@ -212,8 +212,8 @@
             border: 2px solid #334155;
             color: #94a3b8;
             border-radius: 50px;
-            padding: 12px 24px;
-            font-size: 0.875rem;
+            padding: 8px 16px;
+            font-size: 0.8rem;
             font-weight: 500;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -235,8 +235,8 @@
         
         .progress-bar {
             flex: 1;
-            margin: 0 32px;
-            height: 4px;
+            margin: 0 24px;
+            height: 3px;
             background: #334155;
             border-radius: 2px;
             overflow: hidden;
@@ -414,19 +414,21 @@
         <div id="quiz-content" style="display: none;">
             <div class="header-section">
                 <div class="header">
-                    <h1>Fantasy Football Quiz</h1>
-                    <p class="subtitle">Test your knowledge and dominate your league</p>
+                    <h3><center>🏈 Fig Fam Draft Quiz 🏈</center></h3>
                 </div>
             </div>
             
             <div class="stats-card">
-                <div class="label">Question</div>
-                <div class="value">
-                    <span id="current-question">1</span>/<span id="total-questions">0</span>
-                </div>
+                <div class="value" id="chip-display">⭐⚪⚪⚪⚪</div>
             </div>
             
             <div class="question-card">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <span style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
+                        <span id="current-question-display">1</span> of 4
+                    </span>
+                </div>
+                
                 <div class="question-text" id="question-text">
                     Loading question...
                 </div>
@@ -439,18 +441,36 @@
             </div>
             
             <div class="controls-section">
-                <button class="btn btn-primary" id="show-answer-btn" onclick="toggleAnswer()">
-                    Show Answer
+                <button class="btn" id="correct-btn" onclick="markCorrect()" style="background: #22c55e; color: white;">
+                    ✓ Correct
+                </button>
+                <button class="btn" id="wrong-btn" onclick="markWrong()" style="background: #ef4444; color: white;">
+                    ✗ Wrong  
                 </button>
             </div>
             
             <div class="navigation">
                 <div class="nav-controls">
                     <button class="nav-btn" id="prev-btn" onclick="previousQuestion()">← Previous</button>
+                    <span style="color: #94a3b8; font-weight: 500;">
+                        Question <span id="current-question">1</span> of <span id="total-questions">4</span>
+                    </span>
                     <button class="nav-btn" id="next-btn" onclick="nextQuestion()">Next →</button>
                 </div>
                 <div class="progress-bar">
-                    <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+                    <div class="progress-fill" id="progress-fill" style="width: 25%"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="final-results" style="display: none;">
+            <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 15, 35, 0.95); display: flex; align-items: center; justify-content: center; z-index: 1000;">
+                <div style="background: #1e293b; border-radius: 20px; padding: 32px; border: 1px solid #334155; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); text-align: center; max-width: 500px; width: 90%;">
+                    <h2 style="font-size: 2rem; margin-bottom: 16px; color: #ffffff;">Quiz Complete!</h2>
+                    <div style="font-size: 1.2rem; color: #94a3b8; margin-bottom: 24px;">
+                        You get <span id="final-chip-count" style="color: #22c55e; font-weight: 700;">1</span> chips!
+                    </div>
+                    <div id="final-chip-display" style="font-size: 2.5rem;">⭐⚪⚪⚪⚪</div>
                 </div>
             </div>
         </div>
@@ -460,12 +480,14 @@
 
     <script>
         let quizData = [];
+        let gameQuestions = []; // 4 random questions for this game
         let currentQuestionIndex = 0;
-        let answerVisible = false;
+        let chips = 1; // Start with 1 chip
+        let questionAnswered = false;
 
         async function loadQuizData() {
             try {
-                const response = await fetch('./quiz-data.json');
+                const response = await fetch('quiz-data.json');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -490,57 +512,139 @@
             errorElement.style.display = 'block';
         }
 
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
         function initializeQuiz() {
+            // Select 4 random questions using proper Fisher-Yates shuffle
+            const shuffled = shuffleArray(quizData);
+            gameQuestions = shuffled.slice(0, 4);
+            
             document.getElementById('loading').style.display = 'none';
             document.getElementById('quiz-content').style.display = 'block';
-            document.getElementById('total-questions').textContent = quizData.length;
+            document.getElementById('total-questions').textContent = '4';
             displayQuestion();
             updateProgress();
+            updateChipDisplay();
         }
 
         function displayQuestion() {
-            if (quizData.length === 0) return;
+            if (gameQuestions.length === 0) return;
             
-            const question = quizData[currentQuestionIndex];
+            const question = gameQuestions[currentQuestionIndex];
             document.getElementById('question-text').textContent = question.question;
             document.getElementById('answer-text').textContent = question.answer;
             document.getElementById('current-question').textContent = currentQuestionIndex + 1;
+            document.getElementById('current-question-display').textContent = currentQuestionIndex + 1;
             
-            // Hide answer and reset button text
+            // Always show the answer
             const answerCard = document.getElementById('answer-card');
-            answerCard.classList.remove('show');
-            document.getElementById('show-answer-btn').textContent = 'Show Answer';
-            answerVisible = false;
+            answerCard.classList.add('show');
+            
+            // Reset question state
+            questionAnswered = false;
+            document.getElementById('correct-btn').disabled = false;
+            document.getElementById('wrong-btn').disabled = false;
             
             // Update navigation buttons
             document.getElementById('prev-btn').disabled = currentQuestionIndex === 0;
-            document.getElementById('next-btn').disabled = currentQuestionIndex === quizData.length - 1;
+            document.getElementById('next-btn').disabled = currentQuestionIndex === 3;
             
             updateProgress();
         }
 
         function updateProgress() {
-            const progress = ((currentQuestionIndex + 1) / quizData.length) * 100;
+            const progress = ((currentQuestionIndex + 1) / 4) * 100;
             document.getElementById('progress-fill').style.width = progress + '%';
         }
 
-        function toggleAnswer() {
-            const answerCard = document.getElementById('answer-card');
-            const button = document.getElementById('show-answer-btn');
+        function updateChipDisplay() {
+            let display = '';
+            // Always start with at least 1 star
+            display += '⭐';
             
-            if (answerVisible) {
-                answerCard.classList.remove('show');
-                button.textContent = 'Show Answer';
-                answerVisible = false;
-            } else {
-                answerCard.classList.add('show');
-                button.textContent = 'Hide Answer';
-                answerVisible = true;
+            // Add stars for each correct answer + show X for wrong answers
+            for (let i = 0; i < 4; i++) {
+                if (gameQuestions[i] && gameQuestions[i].userAnswer === true) {
+                    display += '⭐';
+                } else if (gameQuestions[i] && gameQuestions[i].userAnswer === false) {
+                    display += '❌';
+                } else {
+                    display += '⚪';
+                }
             }
+            
+            document.getElementById('chip-display').textContent = display;
+        }
+
+        function markCorrect() {
+            if (questionAnswered) return;
+            chips++;
+            gameQuestions[currentQuestionIndex].userAnswer = true;
+            questionAnswered = true;
+            document.getElementById('correct-btn').disabled = true;
+            document.getElementById('wrong-btn').disabled = true;
+            updateChipDisplay();
+            
+            // Auto advance after short delay
+            setTimeout(() => {
+                if (currentQuestionIndex < 3) {
+                    nextQuestion();
+                } else {
+                    showFinalResults();
+                }
+            }, 1500);
+        }
+
+        function markWrong() {
+            if (questionAnswered) return;
+            gameQuestions[currentQuestionIndex].userAnswer = false;
+            questionAnswered = true;
+            document.getElementById('correct-btn').disabled = true;
+            document.getElementById('wrong-btn').disabled = true;
+            updateChipDisplay();
+            
+            // Auto advance after short delay  
+            setTimeout(() => {
+                if (currentQuestionIndex < 3) {
+                    nextQuestion();
+                } else {
+                    showFinalResults();
+                }
+            }, 1500);
+        }
+
+        function showFinalResults() {
+            document.getElementById('quiz-content').style.display = 'none';
+            const finalResults = document.getElementById('final-results');
+            finalResults.style.display = 'block';
+            document.getElementById('final-chip-count').textContent = chips;
+            
+            // Update final chip display - same logic as regular display
+            let finalDisplay = '';
+            finalDisplay += '⭐'; // Starting chip
+            
+            for (let i = 0; i < 4; i++) {
+                if (gameQuestions[i] && gameQuestions[i].userAnswer === true) {
+                    finalDisplay += '⭐';
+                } else if (gameQuestions[i] && gameQuestions[i].userAnswer === false) {
+                    finalDisplay += '❌';
+                } else {
+                    finalDisplay += '⚪';
+                }
+            }
+            
+            document.getElementById('final-chip-display').textContent = finalDisplay;
         }
 
         function nextQuestion() {
-            if (currentQuestionIndex < quizData.length - 1) {
+            if (currentQuestionIndex < 3) {
                 currentQuestionIndex++;
                 displayQuestion();
             }
@@ -560,12 +664,13 @@
                     if (currentQuestionIndex > 0) previousQuestion();
                     break;
                 case 'ArrowRight':
-                    if (currentQuestionIndex < quizData.length - 1) nextQuestion();
+                    if (currentQuestionIndex < 3) nextQuestion();
                     break;
-                case ' ':
-                case 'Enter':
-                    event.preventDefault();
-                    toggleAnswer();
+                case '1':
+                    if (!questionAnswered) markCorrect();
+                    break;
+                case '2':
+                    if (!questionAnswered) markWrong();
                     break;
             }
         });
