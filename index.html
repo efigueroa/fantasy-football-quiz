@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fig Fam Draft Quiz</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        
         * {
             margin: 0;
             padding: 0;
@@ -14,7 +12,7 @@
         }
         
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
             background: #0f0f23;
             color: #e2e8f0;
             min-height: 100vh;
@@ -29,6 +27,7 @@
             grid-template-columns: repeat(12, 1fr);
             gap: 16px;
             align-items: start;
+            align-content: start;
             min-height: calc(100vh - 24px);
         }
         
@@ -54,17 +53,12 @@
         }
         
         .header h1 {
+            text-align: center;
             font-size: 2.2rem;
             font-weight: 700;
             color: #ffffff;
             margin-bottom: 8px;
             letter-spacing: -0.02em;
-        }
-        
-        .header .subtitle {
-            font-size: 0.95rem;
-            color: #94a3b8;
-            font-weight: 400;
         }
         
         .stats-card {
@@ -74,7 +68,6 @@
             border-radius: 16px;
             padding: 24px;
             color: #ffffff;
-            transform: translateY(30px);
         }
         
         .stats-card .label {
@@ -127,14 +120,6 @@
             border-radius: 16px;
             padding: 24px;
             margin-top: 20px;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .answer-card.show {
-            opacity: 1;
-            transform: translateY(0);
         }
         
         .answer-text {
@@ -151,7 +136,6 @@
             flex-direction: column;
             gap: 12px;
             align-self: end;
-            transform: translateY(-16px);
         }
         
         .btn {
@@ -199,7 +183,7 @@
         }
         
         .navigation {
-            grid-column: 1 / 13;
+            grid-column: 1 / -1;
             grid-row: 3;
             display: flex;
             justify-content: space-between;
@@ -250,17 +234,17 @@
         }
         
         .loading {
-            grid-column: 1 / 13;
+            grid-column: 1 / -1;
             grid-row: 1 / 4;
             display: flex;
-            items: center;
+            align-items: center;
             justify-content: center;
             font-size: 1.125rem;
             color: #94a3b8;
         }
         
         .error {
-            grid-column: 1 / 13;
+            grid-column: 1 / -1;
             grid-row: 2;
             background: #7f1d1d;
             border: 1px solid #dc2626;
@@ -291,7 +275,6 @@
             .stats-card {
                 grid-column: 1;
                 grid-row: 2;
-                transform: translateY(0);
                 padding: 24px;
             }
             
@@ -304,7 +287,6 @@
             .controls-section {
                 grid-column: 1;
                 grid-row: 4;
-                transform: translateY(0);
                 flex-direction: row;
                 justify-content: center;
                 flex-wrap: wrap;
@@ -358,21 +340,8 @@
                 padding: 14px 20px;
             }
             
-            .navigation {
-                flex-direction: column;
-                gap: 16px;
-            }
-            
             .progress-bar {
-                margin: 0;
-                order: -1;
-            }
-            
-            .nav-controls {
-                display: flex;
-                gap: 16px;
-                width: 100%;
-                justify-content: space-between;
+                margin: 0 12px;
             }
         }
         
@@ -414,22 +383,22 @@
         <div id="quiz-content" style="display: none;">
             <div class="header-section">
                 <div class="header">
-                    <h3><center>🏈 Fig Fam Draft Quiz 🏈</center></h3>
+                    <h1>🏈 Fig Fam Draft Quiz 🏈</h1>
                 </div>
             </div>
             
             <div class="stats-card">
-                <div class="value" id="chip-display">⭐⚪⚪⚪⚪</div>
+                <div class="value" id="chip-display" aria-live="polite">⭐⚪⚪⚪⚪</div>
             </div>
             
             <div class="question-card">
                 <div style="text-align: center; margin-bottom: 20px;">
                     <span style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
-                        <span id="current-question-display">1</span> of 4
+                        <span id="current-question-display">1</span> of <span id="total-questions">4</span>
                     </span>
                 </div>
                 
-                <div class="question-text" id="question-text">
+                <div class="question-text" id="question-text" aria-live="polite">
                     Loading question...
                 </div>
                 
@@ -441,25 +410,20 @@
             </div>
             
             <div class="controls-section">
-                <button class="btn" id="correct-btn" onclick="markCorrect()" style="background: #22c55e; color: white;">
+                <button class="btn" id="correct-btn" onclick="mark(true)" style="background: #22c55e; color: white;">
                     ✓ Correct
                 </button>
-                <button class="btn" id="wrong-btn" onclick="markWrong()" style="background: #ef4444; color: white;">
+                <button class="btn" id="wrong-btn" onclick="mark(false)" style="background: #ef4444; color: white;">
                     ✗ Wrong  
                 </button>
             </div>
             
             <div class="navigation">
-                <div class="nav-controls">
-                    <button class="nav-btn" id="prev-btn" onclick="previousQuestion()">← Previous</button>
-                    <span style="color: #94a3b8; font-weight: 500;">
-                        Question <span id="current-question">1</span> of <span id="total-questions">4</span>
-                    </span>
-                    <button class="nav-btn" id="next-btn" onclick="nextQuestion()">Next →</button>
-                </div>
+                <button class="nav-btn" id="prev-btn" onclick="previousQuestion()">← Previous</button>
                 <div class="progress-bar">
                     <div class="progress-fill" id="progress-fill" style="width: 25%"></div>
                 </div>
+                <button class="nav-btn" id="next-btn" onclick="nextQuestion()">Next →</button>
             </div>
         </div>
         
@@ -468,9 +432,12 @@
                 <div style="background: #1e293b; border-radius: 20px; padding: 32px; border: 1px solid #334155; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); text-align: center; max-width: 500px; width: 90%;">
                     <h2 style="font-size: 2rem; margin-bottom: 16px; color: #ffffff;">Quiz Complete!</h2>
                     <div style="font-size: 1.2rem; color: #94a3b8; margin-bottom: 24px;">
-                        You get <span id="final-chip-count" style="color: #22c55e; font-weight: 700;">1</span> chips!
+                        You get <span id="final-chip-count" style="color: #22c55e; font-weight: 700;">1 chip</span>!
                     </div>
                     <div id="final-chip-display" style="font-size: 2.5rem;">⭐⚪⚪⚪⚪</div>
+                    <button class="btn btn-primary" onclick="startGame()" style="margin-top: 28px;">
+                        Play Again
+                    </button>
                 </div>
             </div>
         </div>
@@ -479,11 +446,14 @@
     </div>
 
     <script>
+        const ROUNDS = 4;
+        const SEEN_KEY = 'ffquiz-seen';
+
         let quizData = [];
-        let gameQuestions = []; // 4 random questions for this game
+        let gameQuestions = [];
         let currentQuestionIndex = 0;
-        let chips = 1; // Start with 1 chip
         let questionAnswered = false;
+        let advanceTimer = null;
 
         async function loadQuizData() {
             try {
@@ -492,12 +462,13 @@
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 quizData = await response.json();
-                
-                if (!Array.isArray(quizData) || quizData.length === 0) {
-                    throw new Error('Invalid quiz data format or empty array');
+
+                if (!Array.isArray(quizData) || quizData.length < ROUNDS) {
+                    throw new Error(`Need at least ${ROUNDS} questions in the bank`);
                 }
-                
-                initializeQuiz();
+
+                document.getElementById('total-questions').textContent = ROUNDS;
+                startGame();
             } catch (error) {
                 console.error('Error loading quiz data:', error);
                 showError(`Failed to load quiz data: ${error.message}. Make sure 'quiz-data.json' exists in the same directory.`);
@@ -521,156 +492,154 @@
             return shuffled;
         }
 
-        function initializeQuiz() {
-            // Select 4 random questions using proper Fisher-Yates shuffle
-            const shuffled = shuffleArray(quizData);
-            gameQuestions = shuffled.slice(0, 4);
-            
+        // -- seen-question history ------------------------------------------
+        // ponytail: localStorage is per browser, so each phone keeps its own
+        // history. Sharing it across drafters would need a server. Not worth it
+        // for one night a year.
+        function loadSeen() {
+            try {
+                return new Set(JSON.parse(localStorage.getItem(SEEN_KEY)) || []);
+            } catch (e) {
+                return new Set();   // private mode, or someone hand-edited it
+            }
+        }
+
+        function saveSeen(seen) {
+            try {
+                localStorage.setItem(SEEN_KEY, JSON.stringify([...seen]));
+            } catch (e) {
+                // Storage full or blocked. The game still plays, it just repeats.
+            }
+        }
+
+        function pickQuestions() {
+            let seen = loadSeen();
+            let pool = quizData.filter(q => !seen.has(q.question));
+
+            // Bank used up, start the rotation over
+            if (pool.length < ROUNDS) {
+                seen = new Set();
+                pool = quizData;
+            }
+
+            const picked = shuffleArray(pool).slice(0, ROUNDS);
+            picked.forEach(q => seen.add(q.question));
+            saveSeen(seen);
+
+            // Copy, so userAnswer never sticks to the shared quizData objects
+            return picked.map(q => ({ ...q }));
+        }
+
+        // -- game -----------------------------------------------------------
+
+        function startGame() {
+            clearTimeout(advanceTimer);
+            gameQuestions = pickQuestions();
+            currentQuestionIndex = 0;
             document.getElementById('loading').style.display = 'none';
-            document.getElementById('quiz-content').style.display = 'block';
-            document.getElementById('total-questions').textContent = '4';
+            document.getElementById('final-results').style.display = 'none';
+            document.getElementById('quiz-content').style.display = 'contents';
             displayQuestion();
-            updateProgress();
-            updateChipDisplay();
+        }
+
+        function allAnswered() {
+            return gameQuestions.every(q => q.userAnswer !== undefined);
         }
 
         function displayQuestion() {
-            if (gameQuestions.length === 0) return;
-            
             const question = gameQuestions[currentQuestionIndex];
+            const onLastQuestion = currentQuestionIndex === ROUNDS - 1;
+
             document.getElementById('question-text').textContent = question.question;
             document.getElementById('answer-text').textContent = question.answer;
-            document.getElementById('current-question').textContent = currentQuestionIndex + 1;
             document.getElementById('current-question-display').textContent = currentQuestionIndex + 1;
-            
-            // Always show the answer
-            const answerCard = document.getElementById('answer-card');
-            answerCard.classList.add('show');
-            
-            // Reset question state
-            questionAnswered = false;
-            document.getElementById('correct-btn').disabled = false;
-            document.getElementById('wrong-btn').disabled = false;
-            
-            // Update navigation buttons
+
+            // Re-scoring an answered question was how you farmed chips. Lock it.
+            questionAnswered = question.userAnswer !== undefined;
+            document.getElementById('correct-btn').disabled = questionAnswered;
+            document.getElementById('wrong-btn').disabled = questionAnswered;
+
             document.getElementById('prev-btn').disabled = currentQuestionIndex === 0;
-            document.getElementById('next-btn').disabled = currentQuestionIndex === 3;
-            
+
+            const nextBtn = document.getElementById('next-btn');
+            nextBtn.textContent = onLastQuestion ? 'Finish' : 'Next →';
+            nextBtn.disabled = onLastQuestion && !allAnswered();
+
             updateProgress();
+            updateChipDisplay();
         }
 
         function updateProgress() {
-            const progress = ((currentQuestionIndex + 1) / 4) * 100;
+            const progress = ((currentQuestionIndex + 1) / ROUNDS) * 100;
             document.getElementById('progress-fill').style.width = progress + '%';
         }
 
+        // One chip to start, plus one per correct answer
+        function chipCount() {
+            return 1 + gameQuestions.filter(q => q.userAnswer === true).length;
+        }
+
+        function chipString() {
+            return '⭐' + gameQuestions
+                .map(q => q.userAnswer === true ? '⭐' : q.userAnswer === false ? '❌' : '⚪')
+                .join('');
+        }
+
         function updateChipDisplay() {
-            let display = '';
-            // Always start with at least 1 star
-            display += '⭐';
-            
-            // Add stars for each correct answer + show X for wrong answers
-            for (let i = 0; i < 4; i++) {
-                if (gameQuestions[i] && gameQuestions[i].userAnswer === true) {
-                    display += '⭐';
-                } else if (gameQuestions[i] && gameQuestions[i].userAnswer === false) {
-                    display += '❌';
-                } else {
-                    display += '⚪';
-                }
-            }
-            
-            document.getElementById('chip-display').textContent = display;
+            document.getElementById('chip-display').textContent = chipString();
         }
 
-        function markCorrect() {
+        function mark(correct) {
             if (questionAnswered) return;
-            chips++;
-            gameQuestions[currentQuestionIndex].userAnswer = true;
+            gameQuestions[currentQuestionIndex].userAnswer = correct;
             questionAnswered = true;
             document.getElementById('correct-btn').disabled = true;
             document.getElementById('wrong-btn').disabled = true;
             updateChipDisplay();
-            
-            // Auto advance after short delay
-            setTimeout(() => {
-                if (currentQuestionIndex < 3) {
-                    nextQuestion();
-                } else {
-                    showFinalResults();
-                }
-            }, 1500);
-        }
 
-        function markWrong() {
-            if (questionAnswered) return;
-            gameQuestions[currentQuestionIndex].userAnswer = false;
-            questionAnswered = true;
-            document.getElementById('correct-btn').disabled = true;
-            document.getElementById('wrong-btn').disabled = true;
-            updateChipDisplay();
-            
-            // Auto advance after short delay  
-            setTimeout(() => {
-                if (currentQuestionIndex < 3) {
-                    nextQuestion();
-                } else {
-                    showFinalResults();
-                }
-            }, 1500);
+            advanceTimer = setTimeout(nextQuestion, 1500);
         }
 
         function showFinalResults() {
+            const total = chipCount();
             document.getElementById('quiz-content').style.display = 'none';
-            const finalResults = document.getElementById('final-results');
-            finalResults.style.display = 'block';
-            document.getElementById('final-chip-count').textContent = chips;
-            
-            // Update final chip display - same logic as regular display
-            let finalDisplay = '';
-            finalDisplay += '⭐'; // Starting chip
-            
-            for (let i = 0; i < 4; i++) {
-                if (gameQuestions[i] && gameQuestions[i].userAnswer === true) {
-                    finalDisplay += '⭐';
-                } else if (gameQuestions[i] && gameQuestions[i].userAnswer === false) {
-                    finalDisplay += '❌';
-                } else {
-                    finalDisplay += '⚪';
-                }
-            }
-            
-            document.getElementById('final-chip-display').textContent = finalDisplay;
+            document.getElementById('final-results').style.display = 'block';
+            document.getElementById('final-chip-count').textContent =
+                `${total} chip${total === 1 ? '' : 's'}`;
+            document.getElementById('final-chip-display').textContent = chipString();
         }
 
         function nextQuestion() {
-            if (currentQuestionIndex < 3) {
-                currentQuestionIndex++;
-                displayQuestion();
+            clearTimeout(advanceTimer);
+            if (currentQuestionIndex === ROUNDS - 1) {
+                if (allAnswered()) showFinalResults();
+                return;
             }
+            currentQuestionIndex++;
+            displayQuestion();
         }
 
         function previousQuestion() {
-            if (currentQuestionIndex > 0) {
-                currentQuestionIndex--;
-                displayQuestion();
-            }
+            clearTimeout(advanceTimer);
+            if (currentQuestionIndex === 0) return;
+            currentQuestionIndex--;
+            displayQuestion();
         }
 
-        // Keyboard navigation
+        // Keyboard: arrows navigate, 1 marks correct, 2 marks wrong
         document.addEventListener('keydown', function(event) {
-            switch(event.key) {
+            switch (event.key) {
                 case 'ArrowLeft':
-                    if (currentQuestionIndex > 0) previousQuestion();
+                    previousQuestion();
                     break;
                 case 'ArrowRight':
-                    if (currentQuestionIndex < 3) nextQuestion();
+                    nextQuestion();
                     break;
                 case '1':
-                    if (!questionAnswered) markCorrect();
+                    mark(true);
                     break;
                 case '2':
-                    if (!questionAnswered) markWrong();
+                    mark(false);
                     break;
             }
         });
