@@ -16,7 +16,7 @@
     "answer": "Packers"
   },
   {
-    "question": "Which city are the Raiders currently based in?",
+    "question": "Which city do the Raiders play in?",
     "answer": "Las Vegas"
   },
   {
@@ -24,12 +24,12 @@
     "answer": "Tom Brady"
   },
   {
-    "question": "Which team has won the most Super Bowls?",
-    "answer": "Patriots"
+    "question": "Which two teams are tied for the most Super Bowl wins?",
+    "answer": "Patriots and Steelers (6 each)"
   },
   {
-    "question": "Which team has the most Super Bowl losses?",
-    "answer": "Patriots"
+    "question": "Which two teams are tied for the most Super Bowl losses?",
+    "answer": "Patriots and Broncos (5 each)"
   },
   {
     "question": "Who is known as 'The Bus'?",
@@ -80,7 +80,7 @@
     "answer": "Steelers"
   },
   {
-    "question": "Which quarterback is known for 'The Immaculate Reception'?",
+    "question": "Which quarterback threw the pass on 'The Immaculate Reception'?",
     "answer": "Terry Bradshaw"
   },
   {
@@ -168,7 +168,7 @@
     "answer": "Chargers"
   },
   {
-"question": "What was the former name of the Washington Commanders?",
+    "question": "What was the former name of the Washington Commanders?",
     "answer": "Redskins"
   },
   {
@@ -176,8 +176,8 @@
     "answer": "Joe Montana"
   },
   {
-    "question": "What team does Aaron Rodgers currently play for?",
-    "answer": "Steelers"
+    "question": "Which team drafted Aaron Rodgers?",
+    "answer": "Packers"
   },
   {
     "question": "Who was the MVP of Super Bowl LVI?",
@@ -188,7 +188,7 @@
     "answer": "Cardinals"
   },
   {
-    "question": "Who is the head coach of the Patriots after Bill Belichick?",
+    "question": "Who replaced Bill Belichick as Patriots head coach?",
     "answer": "Jerod Mayo"
   },
   {
@@ -224,7 +224,7 @@
     "answer": "Vikings"
   },
   {
-    "question": "Which NFL team has a horn on its helmet?",
+    "question": "Which NFL team has white horns on a purple helmet?",
     "answer": "Vikings"
   },
   {
@@ -260,15 +260,15 @@
     "answer": "Chargers"
   },
   {
-    "question": "What team does Christian McCaffrey currently play for?",
-    "answer": "49ers"
+    "question": "Which team drafted Christian McCaffrey?",
+    "answer": "Panthers"
   },
   {
     "question": "Which team’s fans are known as the '12th Man'?",
     "answer": "Seahawks"
   },
   {
-    "question": "Which player won MVP in 2022?",
+    "question": "Which player won NFL MVP for the 2022 season?",
     "answer": "Patrick Mahomes"
   },
   {
@@ -333,7 +333,7 @@
   },
   {
     "question": "Who won Super Bowl XLIX?",
-"answer": "Patriots"
+    "answer": "Patriots"
   },
   {
     "question": "Who is the all-time leader in career interceptions?",
