@@ -43,16 +43,16 @@ function newGame(bank = BANK) {
     const run = newGame();
     run('startGame()');
     run('mark(true)');
-    assert.strictEqual(run('chipCount()'), 2, 'one correct answer should be worth one extra chip');
+    assert.strictEqual(run('chipCount()'), 1, 'one correct answer should be worth one chip');
 
     // Navigate away and back, then try to change the score
     run('nextQuestion()');
     run('previousQuestion()');
     run('mark(false)');
-    assert.strictEqual(run('chipCount()'), 2, 'an answered question must not be flipped to wrong');
+    assert.strictEqual(run('chipCount()'), 1, 'an answered question must not be flipped to wrong');
 
     run('mark(true)');
-    assert.strictEqual(run('chipCount()'), 2, 're-marking an answered question must not add a chip');
+    assert.strictEqual(run('chipCount()'), 1, 're-marking an answered question must not add a chip');
 }
 
 // Scores must not stick to the shared question bank between games
@@ -65,7 +65,7 @@ function newGame(bank = BANK) {
         'answers leaked into quizData, so a repeat question would arrive pre-answered');
 
     run('startGame()');
-    assert.strictEqual(run('chipCount()'), 1, 'a new game starts back at one chip');
+    assert.strictEqual(run('chipCount()'), 0, 'a new game starts back at zero chips');
 }
 
 // Every round ramps: two easy, two medium, one hard, in that order
@@ -111,7 +111,7 @@ function newGame(bank = BANK) {
 {
     const run = newGame();
     run('startGame()');
-    assert.strictEqual(run('[...chipString()].length'), 6, 'chip strip should be one star plus five slots');
+    assert.strictEqual(run('[...chipString()].length'), 5, 'chip strip should be one slot per question');
     run('mark(false)');
     assert.ok(run('chipString().includes("❌")'), 'a wrong answer should show an X');
 }

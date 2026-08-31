@@ -6,7 +6,8 @@ This site was vibe coded and spat out in an afternoon and strictly meant to be u
 Site: [ffquiz.figgy.foo](https://ffquiz.figgy.foo/)
 
 - 5 questions per game, dealt as a ramp: 2 easy, then 2 medium, then 1 hard
-- Chip system: start with 1 chip, earn one more for each correct answer, so 6 is a perfect round
+- Each question card shows its difficulty, colour coded green, amber and red
+- Chip system: one chip per correct answer, so a round pays 0 to 5
 - Legend: ⭐ for correct, ❌ for wrong, ⚪ for unanswered
 - Each browser remembers the questions it has already asked and draws from what is left. Each difficulty rotates on its own, so the short hard list does not keep resetting the easy one
 - **Play Again** on the results screen starts the next drafter. No page reload

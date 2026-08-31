@@ -107,6 +107,22 @@
             border-radius: 20px 20px 0 0;
         }
         
+        .difficulty {
+            display: inline-block;
+            margin-left: 10px;
+            padding: 3px 10px;
+            border-radius: 50px;
+            border: 1px solid currentColor;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        
+        .difficulty.easy   { color: #22c55e; background: rgba(34, 197, 94, 0.12); }
+        .difficulty.medium { color: #f59e0b; background: rgba(245, 158, 11, 0.12); }
+        .difficulty.hard   { color: #ef4444; background: rgba(239, 68, 68, 0.12); }
+        
         .question-text {
             font-size: 1.25rem;
             font-weight: 500;
@@ -389,7 +405,7 @@
             </div>
             
             <div class="stats-card">
-                <div class="value" id="chip-display" aria-live="polite">⭐⚪⚪⚪⚪⚪</div>
+                <div class="value" id="chip-display" aria-live="polite">⚪⚪⚪⚪⚪</div>
             </div>
             
             <div class="question-card">
@@ -397,6 +413,7 @@
                     <span style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
                         <span id="current-question-display">1</span> of <span id="total-questions">5</span>
                     </span>
+                    <span class="difficulty easy" id="difficulty-badge">easy</span>
                 </div>
                 
                 <div class="question-text" id="question-text" aria-live="polite">
@@ -433,9 +450,9 @@
                 <div style="background: #1e293b; border-radius: 20px; padding: 32px; border: 1px solid #334155; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); text-align: center; max-width: 500px; width: 90%;">
                     <h2 style="font-size: 2rem; margin-bottom: 16px; color: #ffffff;">Quiz Complete!</h2>
                     <div style="font-size: 1.2rem; color: #94a3b8; margin-bottom: 24px;">
-                        You get <span id="final-chip-count" style="color: #22c55e; font-weight: 700;">1 chip</span>!
+                        You get <span id="final-chip-count" style="color: #22c55e; font-weight: 700;">0 chips</span>!
                     </div>
-                    <div id="final-chip-display" style="font-size: 2.5rem;">⭐⚪⚪⚪⚪⚪</div>
+                    <div id="final-chip-display" style="font-size: 2.5rem;">⚪⚪⚪⚪⚪</div>
                     <button class="btn btn-primary" onclick="startGame()" style="margin-top: 28px;">
                         Play Again
                     </button>
@@ -568,6 +585,10 @@
             document.getElementById('answer-text').textContent = question.answer;
             document.getElementById('current-question-display').textContent = currentQuestionIndex + 1;
 
+            const badge = document.getElementById('difficulty-badge');
+            badge.textContent = question.difficulty;
+            badge.className = 'difficulty ' + question.difficulty;
+
             // Re-scoring an answered question was how you farmed chips. Lock it.
             questionAnswered = question.userAnswer !== undefined;
             document.getElementById('correct-btn').disabled = questionAnswered;
@@ -588,13 +609,13 @@
             document.getElementById('progress-fill').style.width = progress + '%';
         }
 
-        // One chip to start, plus one per correct answer
+        // One chip per correct answer, nothing to start
         function chipCount() {
-            return 1 + gameQuestions.filter(q => q.userAnswer === true).length;
+            return gameQuestions.filter(q => q.userAnswer === true).length;
         }
 
         function chipString() {
-            return '⭐' + gameQuestions
+            return gameQuestions
                 .map(q => q.userAnswer === true ? '⭐' : q.userAnswer === false ? '❌' : '⚪')
                 .join('');
         }
