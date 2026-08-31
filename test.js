@@ -8,8 +8,11 @@ const vm = require('vm');
 
 const js = fs.readFileSync('index.html', 'utf8').split('<script>')[1].split('</script>')[0];
 
-// Eight questions, so two games in a row should use every one exactly once
-const BANK = Array.from({ length: 8 }, (_, i) => ({ question: `Q${i}`, answer: `A${i}` }));
+// Exactly two rounds' worth of each difficulty, so two games in a row
+// should use every question exactly once and then rotate.
+const mk = (difficulty, n) => Array.from({ length: n },
+    (_, i) => ({ question: `${difficulty}-${i}`, answer: `A${i}`, difficulty }));
+const BANK = [...mk('easy', 4), ...mk('medium', 4), ...mk('hard', 2)];
 
 function newGame(bank = BANK) {
     const store = {};
@@ -65,7 +68,17 @@ function newGame(bank = BANK) {
     assert.strictEqual(run('chipCount()'), 1, 'a new game starts back at one chip');
 }
 
-// The seen list should exhaust the bank before it repeats anything
+// Every round ramps: two easy, two medium, one hard, in that order
+{
+    const run = newGame();
+    run('startGame()');
+    assert.deepStrictEqual(
+        JSON.parse(run('JSON.stringify(gameQuestions.map(q => q.difficulty))')),
+        ['easy', 'easy', 'medium', 'medium', 'hard'],
+        'a round must deal 2 easy, 2 medium then 1 hard, in that order');
+}
+
+// The seen list should exhaust each difficulty before it repeats anything
 {
     const run = newGame();
     run('startGame()');
@@ -73,18 +86,32 @@ function newGame(bank = BANK) {
     run('startGame()');
     const second = run('JSON.stringify(gameQuestions.map(q => q.question))');
     const all = [...JSON.parse(first), ...JSON.parse(second)];
-    assert.strictEqual(new Set(all).size, 8, 'two games out of an eight-question bank must not repeat');
+    assert.strictEqual(new Set(all).size, 10, 'two games out of a ten-question bank must not repeat');
 
     // Bank is used up now, so the third game rotates back to the start
     run('startGame()');
-    assert.strictEqual(run('gameQuestions.length'), 4, 'the rotation must reset instead of running dry');
+    assert.strictEqual(run('gameQuestions.length'), 5, 'the rotation must reset instead of running dry');
+}
+
+// A difficulty that runs dry must not reset the others
+{
+    // Only one hard question, so hard rotates every single game
+    const run = newGame([...mk('easy', 4), ...mk('medium', 4), ...mk('hard', 1)]);
+    run('startGame()');
+    const firstEasy = JSON.parse(run(
+        'JSON.stringify(gameQuestions.filter(q => q.difficulty === "easy").map(q => q.question))'));
+    run('startGame()');
+    const secondEasy = JSON.parse(run(
+        'JSON.stringify(gameQuestions.filter(q => q.difficulty === "easy").map(q => q.question))'));
+    assert.strictEqual(firstEasy.filter(q => secondEasy.includes(q)).length, 0,
+        'a short hard list must not reset the easy rotation');
 }
 
 // The chip strip always shows the starting chip plus one slot per round
 {
     const run = newGame();
     run('startGame()');
-    assert.strictEqual(run('[...chipString()].length'), 5, 'chip strip should be one star plus four slots');
+    assert.strictEqual(run('[...chipString()].length'), 6, 'chip strip should be one star plus five slots');
     run('mark(false)');
     assert.ok(run('chipString().includes("❌")'), 'a wrong answer should show an X');
 }
