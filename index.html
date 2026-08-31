@@ -389,13 +389,13 @@
             </div>
             
             <div class="stats-card">
-                <div class="value" id="chip-display" aria-live="polite">⭐⚪⚪⚪⚪</div>
+                <div class="value" id="chip-display" aria-live="polite">⭐⚪⚪⚪⚪⚪</div>
             </div>
             
             <div class="question-card">
                 <div style="text-align: center; margin-bottom: 20px;">
                     <span style="color: #94a3b8; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
-                        <span id="current-question-display">1</span> of <span id="total-questions">4</span>
+                        <span id="current-question-display">1</span> of <span id="total-questions">5</span>
                     </span>
                 </div>
                 
@@ -422,7 +422,7 @@
             <div class="navigation">
                 <button class="nav-btn" id="prev-btn" onclick="previousQuestion()">← Previous</button>
                 <div class="progress-bar">
-                    <div class="progress-fill" id="progress-fill" style="width: 25%"></div>
+                    <div class="progress-fill" id="progress-fill" style="width: 20%"></div>
                 </div>
                 <button class="nav-btn" id="next-btn" onclick="nextQuestion()">Next →</button>
             </div>
@@ -435,7 +435,7 @@
                     <div style="font-size: 1.2rem; color: #94a3b8; margin-bottom: 24px;">
                         You get <span id="final-chip-count" style="color: #22c55e; font-weight: 700;">1 chip</span>!
                     </div>
-                    <div id="final-chip-display" style="font-size: 2.5rem;">⭐⚪⚪⚪⚪</div>
+                    <div id="final-chip-display" style="font-size: 2.5rem;">⭐⚪⚪⚪⚪⚪</div>
                     <button class="btn btn-primary" onclick="startGame()" style="margin-top: 28px;">
                         Play Again
                     </button>
@@ -447,7 +447,9 @@
     </div>
 
     <script>
-        const ROUNDS = 4;
+        // Each round ramps up: two easy, then two medium, then one hard
+        const ROUND_PLAN = [['easy', 2], ['medium', 2], ['hard', 1]];
+        const ROUNDS = ROUND_PLAN.reduce((n, [, count]) => n + count, 0);
         const SEEN_KEY = 'ffquiz-seen';
 
         let quizData = [];
@@ -464,8 +466,14 @@
                 }
                 quizData = await response.json();
 
-                if (!Array.isArray(quizData) || quizData.length < ROUNDS) {
-                    throw new Error(`Need at least ${ROUNDS} questions in the bank`);
+                if (!Array.isArray(quizData)) {
+                    throw new Error('Quiz data is not an array');
+                }
+                for (const [difficulty, count] of ROUND_PLAN) {
+                    const have = quizData.filter(q => q.difficulty === difficulty).length;
+                    if (have < count) {
+                        throw new Error(`Need ${count} ${difficulty} questions, found ${have}`);
+                    }
                 }
 
                 document.getElementById('total-questions').textContent = ROUNDS;
@@ -514,16 +522,21 @@
         }
 
         function pickQuestions() {
-            let seen = loadSeen();
-            let pool = quizData.filter(q => !seen.has(q.question));
+            const seen = loadSeen();
+            const picked = [];
 
-            // Bank used up, start the rotation over
-            if (pool.length < ROUNDS) {
-                seen = new Set();
-                pool = quizData;
+            for (const [difficulty, count] of ROUND_PLAN) {
+                const all = quizData.filter(q => q.difficulty === difficulty);
+                let pool = all.filter(q => !seen.has(q.question));
+                if (pool.length < count) {
+                    // This difficulty is used up. Rotate it on its own, so a
+                    // short hard list does not keep resetting easy and medium.
+                    all.forEach(q => seen.delete(q.question));
+                    pool = all;
+                }
+                picked.push(...shuffleArray(pool).slice(0, count));
             }
 
-            const picked = shuffleArray(pool).slice(0, ROUNDS);
             picked.forEach(q => seen.add(q.question));
             saveSeen(seen);
 
