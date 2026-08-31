@@ -1,366 +1,1207 @@
 [
   {
     "question": "Which team is called the Dirty Birds?",
-    "answer": "Falcons"
+    "answer": "Falcons",
+    "difficulty": "medium"
   },
   {
     "question": "Which NFL team has a star on its helmet?",
-    "answer": "Cowboys"
+    "answer": "Cowboys",
+    "difficulty": "easy"
   },
   {
     "question": "Who won the first Super Bowl?",
-    "answer": "Packers"
+    "answer": "Packers",
+    "difficulty": "medium"
   },
   {
     "question": "Which team plays in Lambeau Field?",
-    "answer": "Packers"
+    "answer": "Packers",
+    "difficulty": "easy"
   },
   {
     "question": "Which city do the Raiders play in?",
-    "answer": "Las Vegas"
+    "answer": "Las Vegas",
+    "difficulty": "easy"
   },
   {
     "question": "Who is the NFL all-time leader in passing touchdowns?",
-    "answer": "Tom Brady"
+    "answer": "Tom Brady",
+    "difficulty": "easy"
   },
   {
     "question": "Which two teams are tied for the most Super Bowl wins?",
-    "answer": "Patriots and Steelers (6 each)"
+    "answer": "Patriots and Steelers (6 each)",
+    "difficulty": "medium"
   },
   {
     "question": "Which two teams are tied for the most Super Bowl losses?",
-    "answer": "Patriots and Broncos (5 each)"
+    "answer": "Patriots and Broncos (5 each)",
+    "difficulty": "hard"
   },
   {
     "question": "Who is known as 'The Bus'?",
-    "answer": "Jerome Bettis"
+    "answer": "Jerome Bettis",
+    "difficulty": "medium"
   },
   {
     "question": "What team does Patrick Mahomes play for?",
-    "answer": "Chiefs"
+    "answer": "Chiefs",
+    "difficulty": "easy"
   },
   {
     "question": "Which team is nicknamed 'America's Team'?",
-    "answer": "Cowboys"
+    "answer": "Cowboys",
+    "difficulty": "easy"
   },
   {
     "question": "Who holds the record for most rushing yards in a season?",
-    "answer": "Eric Dickerson"
+    "answer": "Eric Dickerson",
+    "difficulty": "hard"
   },
   {
     "question": "Which team is known for the 'Steel Curtain' defense?",
-    "answer": "Steelers"
+    "answer": "Steelers",
+    "difficulty": "medium"
   },
   {
     "question": "What city are the Eagles from?",
-    "answer": "Philadelphia"
+    "answer": "Philadelphia",
+    "difficulty": "easy"
   },
   {
     "question": "Who was the first player drafted in the 2023 NFL Draft?",
-    "answer": "Bryce Young"
+    "answer": "Bryce Young",
+    "difficulty": "medium"
   },
   {
     "question": "What is the name of the Super Bowl trophy?",
-    "answer": "Lombardi Trophy"
+    "answer": "Lombardi Trophy",
+    "difficulty": "easy"
   },
   {
     "question": "Which team has a lightning bolt logo?",
-    "answer": "Chargers"
+    "answer": "Chargers",
+    "difficulty": "easy"
   },
   {
     "question": "Who is the NFL commissioner?",
-    "answer": "Roger Goodell"
+    "answer": "Roger Goodell",
+    "difficulty": "medium"
   },
   {
     "question": "Which team plays at Arrowhead Stadium?",
-    "answer": "Chiefs"
+    "answer": "Chiefs",
+    "difficulty": "medium"
   },
   {
     "question": "What team wears black and gold and is based in Pittsburgh?",
-    "answer": "Steelers"
+    "answer": "Steelers",
+    "difficulty": "easy"
   },
   {
     "question": "Which quarterback threw the pass on 'The Immaculate Reception'?",
-    "answer": "Terry Bradshaw"
+    "answer": "Terry Bradshaw",
+    "difficulty": "hard"
   },
   {
     "question": "Who won Super Bowl 50?",
-    "answer": "Broncos"
+    "answer": "Broncos",
+    "difficulty": "medium"
   },
   {
     "question": "Which wide receiver was known as 'Megatron'?",
-    "answer": "Calvin Johnson"
+    "answer": "Calvin Johnson",
+    "difficulty": "medium"
   },
   {
     "question": "Which team did Tom Brady finish his career with?",
-    "answer": "Buccaneers"
+    "answer": "Buccaneers",
+    "difficulty": "easy"
   },
   {
     "question": "Who was the quarterback for the 1972 undefeated Dolphins?",
-    "answer": "Bob Griese"
+    "answer": "Bob Griese",
+    "difficulty": "hard"
   },
   {
     "question": "Which team has a cannon that fires after touchdowns?",
-    "answer": "Buccaneers"
+    "answer": "Buccaneers",
+    "difficulty": "medium"
   },
   {
     "question": "Which NFL team plays in Seattle?",
-    "answer": "Seahawks"
+    "answer": "Seahawks",
+    "difficulty": "easy"
   },
   {
     "question": "What team does Justin Jefferson play for?",
-    "answer": "Vikings"
+    "answer": "Vikings",
+    "difficulty": "easy"
   },
   {
     "question": "Who holds the record for most career receiving yards?",
-    "answer": "Jerry Rice"
+    "answer": "Jerry Rice",
+    "difficulty": "medium"
   },
   {
     "question": "Which team is known as the 'Monsters of the Midway'?",
-    "answer": "Bears"
+    "answer": "Bears",
+    "difficulty": "medium"
   },
   {
     "question": "What NFL team is based in Denver?",
-    "answer": "Broncos"
+    "answer": "Broncos",
+    "difficulty": "easy"
   },
   {
     "question": "Who was the MVP of Super Bowl LV?",
-    "answer": "Tom Brady"
+    "answer": "Tom Brady",
+    "difficulty": "medium"
   },
   {
     "question": "Which team plays at Soldier Field?",
-    "answer": "Bears"
+    "answer": "Bears",
+    "difficulty": "medium"
   },
   {
     "question": "Which franchise drafted Peyton Manning?",
-    "answer": "Colts"
+    "answer": "Colts",
+    "difficulty": "medium"
   },
   {
     "question": "What team is associated with the 'Who Dat' chant?",
-    "answer": "Saints"
+    "answer": "Saints",
+    "difficulty": "medium"
   },
   {
     "question": "What is the name of the 49ers' stadium?",
-    "answer": "Levi's Stadium"
+    "answer": "Levi's Stadium",
+    "difficulty": "medium"
   },
   {
     "question": "Who is known for the 'Lambeau Leap'?",
-    "answer": "Packers"
+    "answer": "Packers",
+    "difficulty": "medium"
   },
   {
     "question": "Which team has a tiger-striped helmet?",
-    "answer": "Bengals"
+    "answer": "Bengals",
+    "difficulty": "easy"
   },
   {
     "question": "Which team plays at MetLife Stadium along with the Giants?",
-    "answer": "Jets"
+    "answer": "Jets",
+    "difficulty": "easy"
   },
   {
     "question": "What color are the Miami Dolphins' home jerseys?",
-    "answer": "Aqua"
+    "answer": "Aqua",
+    "difficulty": "medium"
   },
   {
     "question": "Which team drafted Joe Burrow?",
-    "answer": "Bengals"
+    "answer": "Bengals",
+    "difficulty": "easy"
   },
   {
     "question": "Which team has a logo with a horse and lightning bolt?",
-    "answer": "Chargers"
+    "answer": "Chargers",
+    "difficulty": "medium"
   },
   {
     "question": "What was the former name of the Washington Commanders?",
-    "answer": "Redskins"
+    "answer": "Redskins",
+    "difficulty": "medium"
   },
   {
     "question": "Which player famously wore number 16 for the 49ers?",
-    "answer": "Joe Montana"
+    "answer": "Joe Montana",
+    "difficulty": "medium"
   },
   {
     "question": "Which team drafted Aaron Rodgers?",
-    "answer": "Packers"
+    "answer": "Packers",
+    "difficulty": "medium"
   },
   {
     "question": "Who was the MVP of Super Bowl LVI?",
-    "answer": "Cooper Kupp"
+    "answer": "Cooper Kupp",
+    "difficulty": "hard"
   },
   {
     "question": "What NFL team is based in Arizona?",
-    "answer": "Cardinals"
+    "answer": "Cardinals",
+    "difficulty": "easy"
   },
   {
     "question": "Who replaced Bill Belichick as Patriots head coach?",
-    "answer": "Jerod Mayo"
+    "answer": "Jerod Mayo",
+    "difficulty": "hard"
   },
   {
     "question": "Which team is known as the 'Purple People Eaters'?",
-    "answer": "Vikings"
+    "answer": "Vikings",
+    "difficulty": "hard"
   },
   {
     "question": "Which quarterback is famous for the 'Helmet Catch' Super Bowl?",
-    "answer": "Eli Manning"
+    "answer": "Eli Manning",
+    "difficulty": "medium"
   },
   {
     "question": "Which team’s mascot is named Swoop?",
-    "answer": "Eagles"
+    "answer": "Eagles",
+    "difficulty": "hard"
   },
   {
     "question": "Which team drafted Trevor Lawrence?",
-    "answer": "Jaguars"
+    "answer": "Jaguars",
+    "difficulty": "easy"
   },
   {
     "question": "Which NFL team has a fleur-de-lis on its helmet?",
-    "answer": "Saints"
+    "answer": "Saints",
+    "difficulty": "easy"
   },
   {
     "question": "What team is based in Buffalo?",
-    "answer": "Bills"
+    "answer": "Bills",
+    "difficulty": "easy"
   },
   {
     "question": "Which player holds the record for most career sacks?",
-    "answer": "Bruce Smith"
+    "answer": "Bruce Smith",
+    "difficulty": "hard"
   },
   {
     "question": "Which team did Randy Moss play for as a rookie?",
-    "answer": "Vikings"
+    "answer": "Vikings",
+    "difficulty": "medium"
   },
   {
     "question": "Which NFL team has white horns on a purple helmet?",
-    "answer": "Vikings"
+    "answer": "Vikings",
+    "difficulty": "easy"
   },
   {
     "question": "Which team plays at Ford Field?",
-    "answer": "Lions"
+    "answer": "Lions",
+    "difficulty": "medium"
   },
   {
     "question": "Which team was founded by George Halas?",
-    "answer": "Bears"
+    "answer": "Bears",
+    "difficulty": "hard"
   },
   {
     "question": "Which team won Super Bowl XL?",
-    "answer": "Steelers"
+    "answer": "Steelers",
+    "difficulty": "hard"
   },
   {
     "question": "Which team did Deion Sanders win a Super Bowl with?",
-    "answer": "49ers"
+    "answer": "49ers",
+    "difficulty": "hard"
   },
   {
     "question": "Which team was featured in the 'Music City Miracle'?",
-    "answer": "Titans"
+    "answer": "Titans",
+    "difficulty": "hard"
   },
   {
     "question": "What is the term for when a player scores 6 points?",
-    "answer": "Touchdown"
+    "answer": "Touchdown",
+    "difficulty": "easy"
   },
   {
     "question": "Which team plays at AT&T Stadium?",
-    "answer": "Cowboys"
+    "answer": "Cowboys",
+    "difficulty": "medium"
   },
   {
     "question": "Which team did Eli Manning refuse to play for when drafted?",
-    "answer": "Chargers"
+    "answer": "Chargers",
+    "difficulty": "medium"
   },
   {
     "question": "Which team drafted Christian McCaffrey?",
-    "answer": "Panthers"
+    "answer": "Panthers",
+    "difficulty": "medium"
   },
   {
     "question": "Which team’s fans are known as the '12th Man'?",
-    "answer": "Seahawks"
+    "answer": "Seahawks",
+    "difficulty": "easy"
   },
   {
     "question": "Which player won NFL MVP for the 2022 season?",
-    "answer": "Patrick Mahomes"
+    "answer": "Patrick Mahomes",
+    "difficulty": "medium"
   },
   {
     "question": "Which stadium is shared by the Rams and Chargers?",
-    "answer": "SoFi Stadium"
+    "answer": "SoFi Stadium",
+    "difficulty": "easy"
   },
   {
     "question": "Which team is the oldest in the NFL?",
-    "answer": "Cardinals"
+    "answer": "Cardinals",
+    "difficulty": "hard"
   },
   {
-    "question": "Which team drafted Tony Romo?",
-    "answer": "Cowboys"
+    "question": "Which team signed Tony Romo as an undrafted free agent?",
+    "answer": "Cowboys",
+    "difficulty": "hard"
   },
   {
     "question": "Which team wears silver and black?",
-    "answer": "Raiders"
+    "answer": "Raiders",
+    "difficulty": "easy"
   },
   {
     "question": "What team plays in Charlotte, North Carolina?",
-    "answer": "Panthers"
+    "answer": "Panthers",
+    "difficulty": "easy"
   },
   {
     "question": "Which team has a horse named Thunder run on the field?",
-    "answer": "Broncos"
+    "answer": "Broncos",
+    "difficulty": "hard"
   },
   {
     "question": "What is the name of the trophy given to the NFC Champion?",
-    "answer": "George Halas Trophy"
+    "answer": "George Halas Trophy",
+    "difficulty": "hard"
   },
   {
     "question": "Which team did Brett Favre start his career with?",
-    "answer": "Falcons"
+    "answer": "Falcons",
+    "difficulty": "hard"
   },
   {
     "question": "Which team drafted Odell Beckham Jr.?",
-    "answer": "Giants"
+    "answer": "Giants",
+    "difficulty": "medium"
   },
   {
     "question": "Which NFL team plays in Kansas City?",
-    "answer": "Chiefs"
+    "answer": "Chiefs",
+    "difficulty": "easy"
   },
   {
     "question": "What team did the Houston Texans replace in the NFL?",
-    "answer": "Oilers"
+    "answer": "Oilers",
+    "difficulty": "hard"
   },
   {
     "question": "Which team is known for the 'No Fly Zone' defense?",
-    "answer": "Broncos"
+    "answer": "Broncos",
+    "difficulty": "hard"
   },
   {
     "question": "What is the maximum number of players on the field per team?",
-    "answer": "11"
+    "answer": "11",
+    "difficulty": "easy"
   },
   {
     "question": "Which team was formerly known as the Houston Oilers?",
-    "answer": "Titans"
+    "answer": "Titans",
+    "difficulty": "medium"
   },
   {
     "question": "What team did Reggie White finish his career with?",
-    "answer": "Panthers"
+    "answer": "Panthers",
+    "difficulty": "hard"
   },
   {
     "question": "Who won Super Bowl XLIX?",
-    "answer": "Patriots"
+    "answer": "Patriots",
+    "difficulty": "medium"
   },
   {
     "question": "Who is the all-time leader in career interceptions?",
-    "answer": "Paul Krause"
+    "answer": "Paul Krause",
+    "difficulty": "hard"
   },
   {
     "question": "Which quarterback was nicknamed 'Broadway Joe'?",
-    "answer": "Joe Namath"
+    "answer": "Joe Namath",
+    "difficulty": "medium"
   },
   {
     "question": "Who caught the 'Helmet Catch' in Super Bowl XLII?",
-    "answer": "David Tyree"
+    "answer": "David Tyree",
+    "difficulty": "medium"
   },
   {
     "question": "Which team has a dolphin as its mascot?",
-    "answer": "Dolphins"
+    "answer": "Dolphins",
+    "difficulty": "easy"
   },
   {
     "question": "Which team has won the NFC East the most times?",
-    "answer": "Cowboys"
+    "answer": "Cowboys",
+    "difficulty": "hard"
   },
   {
     "question": "Which team has the 'Bolt Up' slogan?",
-    "answer": "Chargers"
+    "answer": "Chargers",
+    "difficulty": "hard"
   },
   {
     "question": "Which city is home to the NFL Hall of Fame?",
-    "answer": "Canton"
+    "answer": "Canton",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How many points is a field goal worth?",
+    "answer": "3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How many points is a safety worth?",
+    "answer": "2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How many points is an extra point kick worth?",
+    "answer": "1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How many points is a two point conversion worth?",
+    "answer": "2",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How many quarters are in an NFL game?",
+    "answer": "4",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How many teams are in the NFL?",
+    "answer": "32",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What are the NFL's two conferences called?",
+    "answer": "AFC and NFC",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How many yards does an offense need to gain for a first down?",
+    "answer": "10",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How many yards long is an NFL field between the goal lines?",
+    "answer": "100",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How many downs does an offense get to gain a first down?",
+    "answer": "4",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What do the letters NFL stand for?",
+    "answer": "National Football League",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How many games does each NFL team play in the regular season?",
+    "answer": "17",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team plays in Green Bay?",
+    "answer": "Packers",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team plays in Detroit?",
+    "answer": "Lions",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team plays in Cleveland?",
+    "answer": "Browns",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team plays in Baltimore?",
+    "answer": "Ravens",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team plays in New Orleans?",
+    "answer": "Saints",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team plays in Jacksonville?",
+    "answer": "Jaguars",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team plays in Cincinnati?",
+    "answer": "Bengals",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team plays in Indianapolis?",
+    "answer": "Colts",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team plays in Tampa Bay?",
+    "answer": "Buccaneers",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team plays in Minnesota?",
+    "answer": "Vikings",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team plays in Atlanta?",
+    "answer": "Falcons",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team plays in Tennessee?",
+    "answer": "Titans",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team plays in Houston?",
+    "answer": "Texans",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team represents Washington, D.C.?",
+    "answer": "Commanders",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team's helmet has no logo on it?",
+    "answer": "Browns",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team wears purple and gold?",
+    "answer": "Vikings",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team is nicknamed 'Big Blue'?",
+    "answer": "Giants",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team is nicknamed 'The Pack'?",
+    "answer": "Packers",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team is named after the 1849 gold rush?",
+    "answer": "49ers",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team's fans wear foam cheese hats?",
+    "answer": "Packers",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which two teams host a game every Thanksgiving Day?",
+    "answer": "Lions and Cowboys",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In which month is the Super Bowl usually played?",
+    "answer": "February",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which position throws the ball to the receivers?",
+    "answer": "Quarterback",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is it called when the defense tackles the quarterback behind the line?",
+    "answer": "Sack",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is it called when a defender catches a pass meant for the offense?",
+    "answer": "Interception",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is it called when a ball carrier drops the ball?",
+    "answer": "Fumble",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is it called when the offense fails to gain 10 yards in four downs?",
+    "answer": "Turnover on downs",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What do you call the official who runs an NFL game?",
+    "answer": "Referee",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the yellow flag an official throws called?",
+    "answer": "Penalty flag",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the line the offense starts each play from called?",
+    "answer": "Line of scrimmage",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the area a team must reach to score a touchdown called?",
+    "answer": "End zone",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What color are the Cleveland Browns' helmets?",
+    "answer": "Orange",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team is named after a black bird?",
+    "answer": "Ravens",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which conference do the Kansas City Chiefs play in?",
+    "answer": "AFC",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which conference do the Dallas Cowboys play in?",
+    "answer": "NFC",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team's logo is a horseshoe?",
+    "answer": "Colts",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team's logo is an arrowhead?",
+    "answer": "Chiefs",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which NFL team has a pirate ship in its stadium?",
+    "answer": "Buccaneers",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which team won Super Bowl LVII?",
+    "answer": "Chiefs",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team won Super Bowl LVIII?",
+    "answer": "Chiefs",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team won Super Bowl LIX?",
+    "answer": "Eagles",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team won Super Bowl LV?",
+    "answer": "Buccaneers",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team did the Buccaneers beat in Super Bowl LV?",
+    "answer": "Chiefs",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team won Super Bowl LI after trailing 28-3?",
+    "answer": "Patriots",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team lost Super Bowl LI after leading 28-3?",
+    "answer": "Falcons",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team ended the Patriots' perfect season in Super Bowl XLII?",
+    "answer": "Giants",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team went 16-0 in the 2007 regular season?",
+    "answer": "Patriots",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team is the only one to finish a season undefeated and win the Super Bowl?",
+    "answer": "Dolphins",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which quarterback has won the most Super Bowls?",
+    "answer": "Tom Brady",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How many Super Bowls did Tom Brady win?",
+    "answer": "7",
+    "difficulty": "medium"
+  },
+  {
+    "question": "In which round was Tom Brady drafted?",
+    "answer": "Sixth",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which head coach has won the most Super Bowls?",
+    "answer": "Bill Belichick",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team drafted Josh Allen?",
+    "answer": "Bills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team drafted Lamar Jackson?",
+    "answer": "Ravens",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team drafted Justin Herbert?",
+    "answer": "Chargers",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team drafted Saquon Barkley?",
+    "answer": "Giants",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team drafted Derrick Henry?",
+    "answer": "Titans",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team drafted Micah Parsons?",
+    "answer": "Cowboys",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team drafted Travis Kelce?",
+    "answer": "Chiefs",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team drafted Aaron Donald?",
+    "answer": "Rams",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which player is nicknamed 'Gronk'?",
+    "answer": "Rob Gronkowski",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which running back was nicknamed 'Beast Mode'?",
+    "answer": "Marshawn Lynch",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which quarterback is nicknamed 'Big Ben'?",
+    "answer": "Ben Roethlisberger",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which player was nicknamed 'Prime Time'?",
+    "answer": "Deion Sanders",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which player was nicknamed 'Sweetness'?",
+    "answer": "Walter Payton",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which player was nicknamed 'The Minister of Defense'?",
+    "answer": "Reggie White",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team plays at Gillette Stadium?",
+    "answer": "Patriots",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team plays at Lumen Field?",
+    "answer": "Seahawks",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team plays at M&T Bank Stadium?",
+    "answer": "Ravens",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team plays at Empower Field at Mile High?",
+    "answer": "Broncos",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team plays at Hard Rock Stadium?",
+    "answer": "Dolphins",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team plays at Highmark Stadium?",
+    "answer": "Bills",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team plays at U.S. Bank Stadium?",
+    "answer": "Vikings",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team plays at Mercedes-Benz Stadium?",
+    "answer": "Falcons",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team plays at Caesars Superdome?",
+    "answer": "Saints",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team plays at Allegiant Stadium?",
+    "answer": "Raiders",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team plays at Lincoln Financial Field?",
+    "answer": "Eagles",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which player holds the record for most career rushing yards?",
+    "answer": "Emmitt Smith",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which player holds the record for most career touchdowns?",
+    "answer": "Jerry Rice",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which player holds the record for most career field goals?",
+    "answer": "Adam Vinatieri",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which player holds the record for most career passing yards?",
+    "answer": "Tom Brady",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team moved from St. Louis to Los Angeles in 2016?",
+    "answer": "Rams",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team moved from San Diego to Los Angeles in 2017?",
+    "answer": "Chargers",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team moved from Cleveland to Baltimore in 1996?",
+    "answer": "Ravens",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team was the NFL's most recent expansion team?",
+    "answer": "Texans",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team has won the most NFL championships counting the years before the Super Bowl?",
+    "answer": "Packers",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which team did Peyton Manning win his second Super Bowl with?",
+    "answer": "Broncos",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which player was taken first overall in the 2024 NFL Draft?",
+    "answer": "Caleb Williams",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which player holds the record for most career rushing touchdowns?",
+    "answer": "Emmitt Smith",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which quarterback holds the record for most touchdown passes in a single season?",
+    "answer": "Peyton Manning",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How many touchdown passes did Peyton Manning throw in the 2013 season?",
+    "answer": "55",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which player holds the record for most receptions in a single season?",
+    "answer": "Michael Thomas",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How many catches did Michael Thomas make in the 2019 season?",
+    "answer": "149",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which kicker holds the record for the longest field goal in NFL history?",
+    "answer": "Justin Tucker",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How long was the longest field goal in NFL history?",
+    "answer": "66 yards",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which player holds the single season sack record?",
+    "answer": "Michael Strahan",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How many sacks did Michael Strahan record in the 2001 season?",
+    "answer": "22.5",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Who was the first player to rush for 2,000 yards in a season?",
+    "answer": "O.J. Simpson",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which team drafted Jerry Rice?",
+    "answer": "49ers",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which college did Jerry Rice attend?",
+    "answer": "Mississippi Valley State",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Who was taken first overall in the 1998 NFL Draft?",
+    "answer": "Peyton Manning",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Who was taken second overall in the 1998 NFL Draft?",
+    "answer": "Ryan Leaf",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Who was taken first overall in the 1999 NFL Draft?",
+    "answer": "Tim Couch",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which quarterback was taken first overall in the 2001 NFL Draft?",
+    "answer": "Michael Vick",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which quarterback led 'The Drive' in the 1986 AFC Championship Game?",
+    "answer": "John Elway",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which team lost 'The Catch' game to the 49ers in the 1981 NFC Championship?",
+    "answer": "Cowboys",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Who caught 'The Catch' for the 49ers?",
+    "answer": "Dwight Clark",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which team suffered 'The Fumble' in the 1987 AFC Championship Game?",
+    "answer": "Browns",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which player fumbled in 'The Fumble'?",
+    "answer": "Earnest Byner",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which kicker missed 'Wide Right' in Super Bowl XXV?",
+    "answer": "Scott Norwood",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How many Super Bowls in a row did the Buffalo Bills lose?",
+    "answer": "4",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Who is the NFL's all-time leading scorer?",
+    "answer": "Adam Vinatieri",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which quarterback holds the record for most consecutive starts?",
+    "answer": "Brett Favre",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How many consecutive starts did Brett Favre make?",
+    "answer": "297",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which quarterback threw the most interceptions in NFL history?",
+    "answer": "Brett Favre",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Who was the first Black quarterback to win a Super Bowl?",
+    "answer": "Doug Williams",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which team did Doug Williams win a Super Bowl with?",
+    "answer": "Washington",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which linebacker was named MVP of Super Bowl XXXV?",
+    "answer": "Ray Lewis",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Who was the first player to run 99 yards from scrimmage?",
+    "answer": "Tony Dorsett",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the longest run from scrimmage in NFL history, in yards?",
+    "answer": "99",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which running back holds the record for most rushing yards in a single game?",
+    "answer": "Adrian Peterson",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How many rushing yards did Adrian Peterson gain in that record game?",
+    "answer": "296",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which team did Kurt Warner lead to a Super Bowl win?",
+    "answer": "Rams",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What was the Rams' high scoring offense of 1999 called?",
+    "answer": "The Greatest Show on Turf",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which team ran the '46 defense' in 1985?",
+    "answer": "Bears",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Who was the defensive coordinator of the 1985 Bears?",
+    "answer": "Buddy Ryan",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which secondary was known as 'The Legion of Boom'?",
+    "answer": "Seahawks",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which team's offensive line was known as 'The Hogs'?",
+    "answer": "Washington",
+    "difficulty": "hard"
+  },
+  {
+    "question": "In which year did the NFL and the AFL merge?",
+    "answer": "1970",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What was the first Super Bowl officially called at the time?",
+    "answer": "AFL-NFL World Championship Game",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which team won the final AFL Championship?",
+    "answer": "Chiefs",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which four NFL teams have never played in a Super Bowl?",
+    "answer": "Browns, Lions, Jaguars and Texans",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which company makes the Lombardi Trophy?",
+    "answer": "Tiffany & Co.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which player holds the record for most punt return touchdowns?",
+    "answer": "Devin Hester",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which player has been selected to the most Pro Bowls?",
+    "answer": "Tom Brady",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which quarterback was the youngest to win a Super Bowl as a starter?",
+    "answer": "Ben Roethlisberger",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which team has retired the most jersey numbers?",
+    "answer": "Bears",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which head coach has the most career wins in NFL history?",
+    "answer": "Don Shula",
+    "difficulty": "hard"
   }
 ]
