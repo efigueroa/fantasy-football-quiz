@@ -197,23 +197,25 @@ function newGame(bank = BANK) {
     assert.strictEqual(run('timerRunning'), false, 'the clock is off until time is added');
     assert.strictEqual(run('timerSeconds()'), 0);
 
-    run('addMinute()');
-    assert.strictEqual(run('timerSeconds()'), 60, '+1 min should bank a minute');
+    assert.strictEqual(run('TIME_STEP'), 30, 'each press should add thirty seconds');
+
+    run('addTime()');
+    assert.strictEqual(run('timerSeconds()'), 30, 'one press should bank thirty seconds');
     assert.strictEqual(run('timerRunning'), true, 'adding time should start the clock');
     assert.strictEqual(run('els["timer-panel"].open'), true,
         'adding time should open the panel so Pause is reachable');
 
-    run('addMinute()');
-    assert.strictEqual(run('timerSeconds()'), 120, 'a second minute should stack');
+    run('addTime()');
+    assert.strictEqual(run('timerSeconds()'), 60, 'a second press should stack');
 
     run('toggleTimer()');
     assert.strictEqual(run('timerRunning'), false, 'Pause should stop the clock');
-    assert.strictEqual(run('timerSeconds()'), 120, 'pausing must not lose banked time');
+    assert.strictEqual(run('timerSeconds()'), 60, 'pausing must not lose banked time');
     assert.strictEqual(run('els["timer-pause"].textContent'), 'Resume',
         'a paused clock should offer Resume');
 
-    run('addMinute()');
-    assert.strictEqual(run('timerSeconds()'), 180, '+1 min should work while paused');
+    run('addTime()');
+    assert.strictEqual(run('timerSeconds()'), 90, 'adding time should work while paused');
     assert.strictEqual(run('timerRunning'), true, 'adding time should resume a paused clock');
 
     run('toggleTimer()');

@@ -23,7 +23,7 @@ The bank holds 241 questions: 80 easy, 87 medium and 74 hard. That is 40 rounds 
 
 ## Timer
 
-The clock is off and folded away until you want it. Open **Timer** at the bottom of the page and press **+1 min** for each minute you want to give a drafter. Adding time starts the clock and opens the panel, so **Pause** is one press away. Minutes stack, **Pause** holds the time without losing it, and **Reset** clears it.
+The clock is off and folded away until you want it. Open **Timer** at the bottom of the page and press **+30 sec** for each half minute you want to give a drafter. Adding time starts the clock and opens the panel, so **Pause** is one press away. Presses stack, **Pause** holds the time without losing it, and **Reset** clears it.
 
 The last 10 seconds tick and tock like a game clock, and a gym horn sounds at zero. The clock turns red for those closing seconds. When the panel is folded away the remaining time still shows next to the word Timer.
 
