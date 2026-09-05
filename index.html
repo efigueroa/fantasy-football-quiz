@@ -268,6 +268,73 @@
             transition: width 0.4s ease;
         }
         
+        .timer {
+            grid-column: 1 / -1;
+            grid-row: 4;
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 16px;
+        }
+        
+        .timer > summary {
+            padding: 12px 20px;
+            cursor: pointer;
+            color: #94a3b8;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            list-style: none;
+        }
+        
+        .timer > summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        .timer > summary::before {
+            content: '\25B8  ';
+        }
+        
+        .timer[open] > summary::before {
+            content: '\25BE  ';
+        }
+        
+        .timer > summary:hover {
+            color: #22c55e;
+        }
+        
+        .timer-body {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 0 20px 20px;
+            flex-wrap: wrap;
+        }
+        
+        .timer-display {
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1;
+            min-width: 4.5ch;
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .timer-display.urgent {
+            color: #ef4444;
+        }
+        
+        .timer-controls {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .timer-summary-time {
+            color: #ffffff;
+            font-variant-numeric: tabular-nums;
+        }
+        
         .loading {
             grid-column: 1 / -1;
             grid-row: 1 / 4;
@@ -461,6 +528,18 @@
                 </div>
                 <button class="nav-btn" id="next-btn" onclick="nextQuestion()">Next →</button>
             </div>
+            
+            <details class="timer" id="timer-panel">
+                <summary>Timer <span class="timer-summary-time" id="timer-summary"></span></summary>
+                <div class="timer-body">
+                    <div class="timer-display" id="timer-display">0:00</div>
+                    <div class="timer-controls">
+                        <button class="btn btn-primary" onclick="addMinute()">+1 min</button>
+                        <button class="btn" id="timer-pause" onclick="toggleTimer()" disabled>Pause</button>
+                        <button class="btn" id="timer-reset" onclick="resetTimer()" disabled>Reset</button>
+                    </div>
+                </div>
+            </details>
         </div>
         
         <div id="final-results" style="display: none;">
@@ -712,6 +791,130 @@
             if (currentQuestionIndex === 0) return;
             currentQuestionIndex--;
             displayQuestion();
+        }
+
+        // -- draft clock ----------------------------------------------------
+        // Counts down to a deadline rather than decrementing a counter, so a
+        // backgrounded tab that stops firing timers does not lose the time.
+        let timerEnd = 0;          // epoch ms it reaches zero, while running
+        let timerLeft = 0;         // seconds banked, while paused or stopped
+        let timerRunning = false;
+        let timerHandle = null;
+        let timerLastSecond = null;
+        let audioCtx = null;
+
+        function timerSeconds() {
+            return timerRunning ? Math.max(0, Math.ceil((timerEnd - Date.now()) / 1000)) : timerLeft;
+        }
+
+        function formatTime(total) {
+            return Math.floor(total / 60) + ':' + String(total % 60).padStart(2, '0');
+        }
+
+        // Synthesised rather than loaded, so the page carries no audio files
+        // and the sounds still work with no network.
+        function tone(freq, ms, type, gain) {
+            try {
+                if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                if (audioCtx.state === 'suspended') audioCtx.resume();
+                const osc = audioCtx.createOscillator();
+                const vol = audioCtx.createGain();
+                osc.type = type;
+                osc.frequency.value = freq;
+                vol.gain.setValueAtTime(gain, audioCtx.currentTime);
+                vol.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + ms / 1000);
+                osc.connect(vol).connect(audioCtx.destination);
+                osc.start();
+                osc.stop(audioCtx.currentTime + ms / 1000);
+            } catch (e) {
+                // No Web Audio, or the browser refused to start it. The clock
+                // still runs, it just runs quietly.
+            }
+        }
+
+        function renderTimer() {
+            const secs = timerSeconds();
+            const display = document.getElementById('timer-display');
+            display.textContent = formatTime(secs);
+            display.className = 'timer-display' + (secs > 0 && secs <= 30 ? ' urgent' : '');
+
+            // The summary stays visible when the panel is shut, so a collapsed
+            // timer still shows the clock.
+            document.getElementById('timer-summary').textContent =
+                secs === 0 ? '' : formatTime(secs) + (timerRunning ? '' : ' paused');
+
+            const pause = document.getElementById('timer-pause');
+            pause.textContent = timerRunning ? 'Pause' : 'Resume';
+            pause.disabled = secs === 0;
+            document.getElementById('timer-reset').disabled = secs === 0;
+        }
+
+        function stopTimerLoop() {
+            clearInterval(timerHandle);
+            timerHandle = null;
+        }
+
+        function timerLoop() {
+            const secs = timerSeconds();
+
+            if (secs !== timerLastSecond) {
+                // Tick and tock through the last 30 seconds, alternating pitch
+                if (secs > 0 && secs <= 30) tone(secs % 2 ? 1150 : 850, 55, 'square', 0.09);
+                timerLastSecond = secs;
+            }
+
+            if (secs === 0 && timerRunning) {
+                timerRunning = false;
+                timerLeft = 0;
+                stopTimerLoop();
+                tone(180, 900, 'sawtooth', 0.22);
+                setTimeout(() => tone(140, 1100, 'sawtooth', 0.22), 450);
+            }
+
+            renderTimer();
+        }
+
+        function startTimerLoop() {
+            if (timerHandle === null) timerHandle = setInterval(timerLoop, 200);
+        }
+
+        function addMinute() {
+            if (timerRunning) {
+                timerEnd += 60000;
+            } else {
+                timerLeft += 60;
+                timerEnd = Date.now() + timerLeft * 1000;
+                timerRunning = true;
+            }
+            timerLastSecond = null;
+            // Open the panel, so Pause is one click away the moment time is on
+            document.getElementById('timer-panel').open = true;
+            startTimerLoop();
+            renderTimer();
+        }
+
+        function toggleTimer() {
+            if (timerRunning) {
+                timerLeft = timerSeconds();
+                timerRunning = false;
+                stopTimerLoop();
+            } else {
+                if (timerLeft === 0) return;
+                timerEnd = Date.now() + timerLeft * 1000;
+                timerRunning = true;
+                timerLastSecond = null;
+                startTimerLoop();
+            }
+            renderTimer();
+        }
+
+        function resetTimer() {
+            timerRunning = false;
+            timerLeft = 0;
+            timerEnd = 0;
+            timerLastSecond = null;
+            stopTimerLoop();
+            renderTimer();
         }
 
         // Keyboard: arrows navigate, 1 marks correct, 2 marks wrong

@@ -39,6 +39,8 @@ function newGame(bank = BANK) {
         },
         setTimeout: () => 0,
         clearTimeout: () => {},
+        setInterval: () => 1,
+        clearInterval: () => {},
     };
     vm.createContext(sandbox);
     vm.runInContext(js, sandbox);
@@ -182,6 +184,62 @@ function newGame(bank = BANK) {
     assert.strictEqual(run('[...chipString()].length'), 5, 'chip strip should be one slot per question');
     run('mark(false)');
     assert.ok(run('chipString().includes("❌")'), 'a wrong answer should show an X');
+}
+
+// The draft clock banks time, pauses without losing it, and resets
+{
+    const run = newGame();
+
+    assert.strictEqual(run('formatTime(0)'), '0:00');
+    assert.strictEqual(run('formatTime(65)'), '1:05');
+    assert.strictEqual(run('formatTime(600)'), '10:00', 'minutes must not wrap at ten');
+
+    assert.strictEqual(run('timerRunning'), false, 'the clock is off until time is added');
+    assert.strictEqual(run('timerSeconds()'), 0);
+
+    run('addMinute()');
+    assert.strictEqual(run('timerSeconds()'), 60, '+1 min should bank a minute');
+    assert.strictEqual(run('timerRunning'), true, 'adding time should start the clock');
+    assert.strictEqual(run('els["timer-panel"].open'), true,
+        'adding time should open the panel so Pause is reachable');
+
+    run('addMinute()');
+    assert.strictEqual(run('timerSeconds()'), 120, 'a second minute should stack');
+
+    run('toggleTimer()');
+    assert.strictEqual(run('timerRunning'), false, 'Pause should stop the clock');
+    assert.strictEqual(run('timerSeconds()'), 120, 'pausing must not lose banked time');
+    assert.strictEqual(run('els["timer-pause"].textContent'), 'Resume',
+        'a paused clock should offer Resume');
+
+    run('addMinute()');
+    assert.strictEqual(run('timerSeconds()'), 180, '+1 min should work while paused');
+    assert.strictEqual(run('timerRunning'), true, 'adding time should resume a paused clock');
+
+    run('toggleTimer()');
+    run('toggleTimer()');
+    assert.strictEqual(run('timerRunning'), true, 'Resume should restart the clock');
+
+    run('resetTimer()');
+    assert.strictEqual(run('timerSeconds()'), 0, 'Reset should clear the clock');
+    assert.strictEqual(run('timerRunning'), false);
+    assert.strictEqual(run('els["timer-pause"].disabled'), true, 'nothing to pause at zero');
+    assert.strictEqual(run('els["timer-reset"].disabled'), true, 'nothing to reset at zero');
+
+    run('toggleTimer()');
+    assert.strictEqual(run('timerRunning'), false, 'Resume must do nothing with no time banked');
+}
+
+// The last thirty seconds are marked urgent, and only those
+{
+    const run = newGame();
+    run('timerRunning = true; timerEnd = Date.now() + 31000; timerLoop();');
+    assert.ok(!/urgent/.test(run('els["timer-display"].className')), '31s is not urgent yet');
+    run('timerEnd = Date.now() + 30000; timerLoop();');
+    assert.ok(/urgent/.test(run('els["timer-display"].className')), '30s should read as urgent');
+    run('timerEnd = Date.now(); timerLoop();');
+    assert.ok(!/urgent/.test(run('els["timer-display"].className')), 'zero is spent, not urgent');
+    assert.strictEqual(run('timerRunning'), false, 'the clock stops when it reaches zero');
 }
 
 console.log('All checks passed');

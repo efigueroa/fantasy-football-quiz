@@ -11,12 +11,23 @@ Site: [ffquiz.figgy.foo](https://ffquiz.figgy.foo/)
 - Legend: ⭐ for correct, ❌ for wrong, ⚪ for unanswered
 - Each browser remembers the questions it has already asked and draws from what is left. Each difficulty rotates on its own, so the short hard list does not keep resetting the easy one
 - **Play Again** on the results screen starts the next drafter. No page reload
+- Every answer links to its Wikipedia page, opening in a new tab, for settling arguments
+- Next never dead ends: a question passed over comes back before the round can finish
+- An optional draft clock, folded away at the bottom of the page
 
 The bank holds 241 questions: 80 easy, 87 medium and 74 hard. That is 40 rounds before an easy question repeats and 74 before a hard one does.
 
 <div align="center">
   <img src="game-screenshot.jpg" alt="Game Screenshot" width="300">
 </div>
+
+## Timer
+
+The clock is off and folded away until you want it. Open **Timer** at the bottom of the page and press **+1 min** for each minute you want to give a drafter. Adding time starts the clock and opens the panel, so **Pause** is one press away. Minutes stack, **Pause** holds the time without losing it, and **Reset** clears it.
+
+The last 30 seconds tick and tock, and a buzzer sounds at zero. The clock turns red for that final half minute. When the panel is folded away the remaining time still shows next to the word Timer.
+
+The sounds are generated in the browser, so the page carries no audio files and works with no network. A browser that blocks audio still keeps time, it just runs quietly.
 
 ## Keyboard shortcuts
 
@@ -52,4 +63,4 @@ Difficulty is a guess about the room, not about the sport. `easy` is what a chil
 node test.js
 ```
 
-This runs the game logic against a stub DOM and checks the scoring rules, the 2/2/1 round ramp and the per difficulty rotation. It needs no dependencies and no browser.
+This runs the game logic against a stub DOM and checks the scoring rules, the 2/2/1 round ramp, the per difficulty rotation, the skipped question cycle and the timer. It needs no dependencies and no browser.
