@@ -800,6 +800,7 @@
         // -- draft clock ----------------------------------------------------
         // Counts down to a deadline rather than decrementing a counter, so a
         // backgrounded tab that stops firing timers does not lose the time.
+        const COUNTDOWN_FROM = 10; // seconds of ticking before the horn
         let timerEnd = 0;          // epoch ms it reaches zero, while running
         let timerLeft = 0;         // seconds banked, while paused or stopped
         let timerRunning = false;
@@ -815,24 +816,83 @@
             return Math.floor(total / 60) + ':' + String(total % 60).padStart(2, '0');
         }
 
-        // Synthesised rather than loaded, so the page carries no audio files
-        // and the sounds still work with no network.
-        function tone(freq, ms, type, gain) {
+        // All sound is synthesised, so the page carries no audio files and
+        // still works with no network. Every entry point is wrapped: a browser
+        // that refuses to start audio keeps time quietly instead of failing.
+        function audio() {
+            if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            return audioCtx;
+        }
+
+        // A game clock reads as wood being struck, not as a tone. Two things
+        // do that: a pitch that drops as it decays, and a scrap of noise at
+        // the very front for the strike itself.
+        function clockTick(pitch) {
             try {
-                if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-                if (audioCtx.state === 'suspended') audioCtx.resume();
-                const osc = audioCtx.createOscillator();
-                const vol = audioCtx.createGain();
-                osc.type = type;
-                osc.frequency.value = freq;
-                vol.gain.setValueAtTime(gain, audioCtx.currentTime);
-                vol.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + ms / 1000);
-                osc.connect(vol).connect(audioCtx.destination);
-                osc.start();
-                osc.stop(audioCtx.currentTime + ms / 1000);
+                const ctx = audio();
+                const t0 = ctx.currentTime;
+
+                const osc = ctx.createOscillator();
+                const body = ctx.createGain();
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(pitch, t0);
+                osc.frequency.exponentialRampToValueAtTime(pitch * 0.65, t0 + 0.05);
+                body.gain.setValueAtTime(0.34, t0);
+                body.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.055);
+                osc.connect(body).connect(ctx.destination);
+                osc.start(t0);
+                osc.stop(t0 + 0.06);
+
+                const len = Math.floor(ctx.sampleRate * 0.012);
+                const buf = ctx.createBuffer(1, len, ctx.sampleRate);
+                const data = buf.getChannelData(0);
+                for (let i = 0; i < len; i++) {
+                    data[i] = (Math.random() * 2 - 1) * (1 - i / len);
+                }
+                const strike = ctx.createBufferSource();
+                const shape = ctx.createBiquadFilter();
+                const level = ctx.createGain();
+                strike.buffer = buf;
+                shape.type = 'bandpass';
+                shape.frequency.value = pitch * 2;
+                shape.Q.value = 1.2;
+                level.gain.value = 0.22;
+                strike.connect(shape).connect(level).connect(ctx.destination);
+                strike.start(t0);
             } catch (e) {
-                // No Web Audio, or the browser refused to start it. The clock
-                // still runs, it just runs quietly.
+                // No audio available. The clock still counts.
+            }
+        }
+
+        // A gym horn, not a bell: three sawtooths a few hertz apart so they
+        // beat against each other and rasp, held flat and cut off hard rather
+        // than allowed to ring out.
+        function hornBlast(seconds) {
+            try {
+                const ctx = audio();
+                const t0 = ctx.currentTime;
+                const out = ctx.createGain();
+                const body = ctx.createBiquadFilter();
+
+                body.type = 'lowpass';
+                body.frequency.value = 2200;
+                out.gain.setValueAtTime(0.0001, t0);
+                out.gain.exponentialRampToValueAtTime(0.22, t0 + 0.012);
+                out.gain.setValueAtTime(0.22, t0 + seconds - 0.06);
+                out.gain.exponentialRampToValueAtTime(0.0001, t0 + seconds);
+                body.connect(out).connect(ctx.destination);
+
+                for (const freq of [110, 113.5, 220.7]) {
+                    const osc = ctx.createOscillator();
+                    osc.type = 'sawtooth';
+                    osc.frequency.value = freq;
+                    osc.connect(body);
+                    osc.start(t0);
+                    osc.stop(t0 + seconds);
+                }
+            } catch (e) {
+                // No audio available. The round still ends.
             }
         }
 
@@ -840,7 +900,7 @@
             const secs = timerSeconds();
             const display = document.getElementById('timer-display');
             display.textContent = formatTime(secs);
-            display.className = 'timer-display' + (secs > 0 && secs <= 30 ? ' urgent' : '');
+            display.className = 'timer-display' + (secs > 0 && secs <= COUNTDOWN_FROM ? ' urgent' : '');
 
             // The summary stays visible when the panel is shut, so a collapsed
             // timer still shows the clock.
@@ -862,8 +922,8 @@
             const secs = timerSeconds();
 
             if (secs !== timerLastSecond) {
-                // Tick and tock through the last 30 seconds, alternating pitch
-                if (secs > 0 && secs <= 30) tone(secs % 2 ? 1150 : 850, 55, 'square', 0.09);
+                // Tick and tock down the closing seconds, alternating pitch
+                if (secs > 0 && secs <= COUNTDOWN_FROM) clockTick(secs % 2 ? 1000 : 700);
                 timerLastSecond = secs;
             }
 
@@ -871,8 +931,7 @@
                 timerRunning = false;
                 timerLeft = 0;
                 stopTimerLoop();
-                tone(180, 900, 'sawtooth', 0.22);
-                setTimeout(() => tone(140, 1100, 'sawtooth', 0.22), 450);
+                hornBlast(1.8);
             }
 
             renderTimer();

@@ -230,13 +230,14 @@ function newGame(bank = BANK) {
     assert.strictEqual(run('timerRunning'), false, 'Resume must do nothing with no time banked');
 }
 
-// The last thirty seconds are marked urgent, and only those
+// The closing countdown starts at ten seconds, and not before
 {
     const run = newGame();
-    run('timerRunning = true; timerEnd = Date.now() + 31000; timerLoop();');
-    assert.ok(!/urgent/.test(run('els["timer-display"].className')), '31s is not urgent yet');
-    run('timerEnd = Date.now() + 30000; timerLoop();');
-    assert.ok(/urgent/.test(run('els["timer-display"].className')), '30s should read as urgent');
+    assert.strictEqual(run('COUNTDOWN_FROM'), 10, 'the countdown should begin at ten seconds');
+    run('timerRunning = true; timerEnd = Date.now() + 11000; timerLoop();');
+    assert.ok(!/urgent/.test(run('els["timer-display"].className')), '11s is not urgent yet');
+    run('timerEnd = Date.now() + 10000; timerLoop();');
+    assert.ok(/urgent/.test(run('els["timer-display"].className')), '10s should read as urgent');
     run('timerEnd = Date.now(); timerLoop();');
     assert.ok(!/urgent/.test(run('els["timer-display"].className')), 'zero is spent, not urgent');
     assert.strictEqual(run('timerRunning'), false, 'the clock stops when it reaches zero');
