@@ -477,7 +477,11 @@
 
         async function loadQuizData() {
             try {
-                const response = await fetch('quiz-data.json');
+                // Pages serves this with max-age=600, so a browser that cached the
+                // old bank would hand it back for ten minutes while running new
+                // page code against it. no-cache revalidates on the ETag instead:
+                // a 304 when nothing changed, fresh data the moment it does.
+                const response = await fetch('quiz-data.json', { cache: 'no-cache' });
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
