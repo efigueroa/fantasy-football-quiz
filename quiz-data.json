@@ -2,1206 +2,1447 @@
   {
     "question": "Which team is called the Dirty Birds?",
     "answer": "Falcons",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Atlanta_Falcons"
   },
   {
     "question": "Which NFL team has a star on its helmet?",
     "answer": "Cowboys",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Dallas_Cowboys"
   },
   {
     "question": "Who won the first Super Bowl?",
     "answer": "Packers",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Green_Bay_Packers"
   },
   {
     "question": "Which team plays in Lambeau Field?",
     "answer": "Packers",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Green_Bay_Packers"
   },
   {
     "question": "Which city do the Raiders play in?",
     "answer": "Las Vegas",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Las_Vegas"
   },
   {
     "question": "Who is the NFL all-time leader in passing touchdowns?",
     "answer": "Tom Brady",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Tom_Brady"
   },
   {
     "question": "Which two teams are tied for the most Super Bowl wins?",
     "answer": "Patriots and Steelers (6 each)",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/List_of_Super_Bowl_champions"
   },
   {
     "question": "Which two teams are tied for the most Super Bowl losses?",
     "answer": "Patriots and Broncos (5 each)",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/List_of_Super_Bowl_champions"
   },
   {
     "question": "Who is known as 'The Bus'?",
     "answer": "Jerome Bettis",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Jerome_Bettis"
   },
   {
     "question": "What team does Patrick Mahomes play for?",
     "answer": "Chiefs",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Kansas_City_Chiefs"
   },
   {
     "question": "Which team is nicknamed 'America's Team'?",
     "answer": "Cowboys",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Dallas_Cowboys"
   },
   {
     "question": "Who holds the record for most rushing yards in a season?",
     "answer": "Eric Dickerson",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Eric_Dickerson"
   },
   {
     "question": "Which team is known for the 'Steel Curtain' defense?",
     "answer": "Steelers",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Pittsburgh_Steelers"
   },
   {
     "question": "What city are the Eagles from?",
     "answer": "Philadelphia",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Philadelphia"
   },
   {
     "question": "Who was the first player drafted in the 2023 NFL Draft?",
     "answer": "Bryce Young",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Bryce_Young"
   },
   {
     "question": "What is the name of the Super Bowl trophy?",
     "answer": "Lombardi Trophy",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Vince_Lombardi_Trophy"
   },
   {
     "question": "Which team has a lightning bolt logo?",
     "answer": "Chargers",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Los_Angeles_Chargers"
   },
   {
     "question": "Who is the NFL commissioner?",
     "answer": "Roger Goodell",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Roger_Goodell"
   },
   {
     "question": "Which team plays at Arrowhead Stadium?",
     "answer": "Chiefs",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Kansas_City_Chiefs"
   },
   {
     "question": "What team wears black and gold and is based in Pittsburgh?",
     "answer": "Steelers",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Pittsburgh_Steelers"
   },
   {
     "question": "Which quarterback threw the pass on 'The Immaculate Reception'?",
     "answer": "Terry Bradshaw",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Terry_Bradshaw"
   },
   {
     "question": "Who won Super Bowl 50?",
     "answer": "Broncos",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Denver_Broncos"
   },
   {
     "question": "Which wide receiver was known as 'Megatron'?",
     "answer": "Calvin Johnson",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Calvin_Johnson"
   },
   {
     "question": "Which team did Tom Brady finish his career with?",
     "answer": "Buccaneers",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Tampa_Bay_Buccaneers"
   },
   {
     "question": "Who was the quarterback for the 1972 undefeated Dolphins?",
     "answer": "Bob Griese",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Bob_Griese"
   },
   {
     "question": "Which team has a cannon that fires after touchdowns?",
     "answer": "Buccaneers",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Tampa_Bay_Buccaneers"
   },
   {
     "question": "Which NFL team plays in Seattle?",
     "answer": "Seahawks",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Seattle_Seahawks"
   },
   {
     "question": "What team does Justin Jefferson play for?",
     "answer": "Vikings",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Minnesota_Vikings"
   },
   {
     "question": "Who holds the record for most career receiving yards?",
     "answer": "Jerry Rice",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Jerry_Rice"
   },
   {
     "question": "Which team is known as the 'Monsters of the Midway'?",
     "answer": "Bears",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Chicago_Bears"
   },
   {
     "question": "What NFL team is based in Denver?",
     "answer": "Broncos",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Denver_Broncos"
   },
   {
     "question": "Who was the MVP of Super Bowl LV?",
     "answer": "Tom Brady",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Tom_Brady"
   },
   {
     "question": "Which team plays at Soldier Field?",
     "answer": "Bears",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Chicago_Bears"
   },
   {
     "question": "Which franchise drafted Peyton Manning?",
     "answer": "Colts",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Indianapolis_Colts"
   },
   {
     "question": "What team is associated with the 'Who Dat' chant?",
     "answer": "Saints",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/New_Orleans_Saints"
   },
   {
     "question": "What is the name of the 49ers' stadium?",
     "answer": "Levi's Stadium",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Levi's_Stadium"
   },
   {
     "question": "Who is known for the 'Lambeau Leap'?",
     "answer": "Packers",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Green_Bay_Packers"
   },
   {
     "question": "Which team has a tiger-striped helmet?",
     "answer": "Bengals",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Cincinnati_Bengals"
   },
   {
     "question": "Which team plays at MetLife Stadium along with the Giants?",
     "answer": "Jets",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/New_York_Jets"
   },
   {
     "question": "What color are the Miami Dolphins' home jerseys?",
     "answer": "Aqua",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Color"
   },
   {
     "question": "Which team drafted Joe Burrow?",
     "answer": "Bengals",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Cincinnati_Bengals"
   },
   {
     "question": "Which team has a logo with a horse and lightning bolt?",
     "answer": "Chargers",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Los_Angeles_Chargers"
   },
   {
     "question": "What was the former name of the Washington Commanders?",
     "answer": "Redskins",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Washington_Commanders"
   },
   {
     "question": "Which player famously wore number 16 for the 49ers?",
     "answer": "Joe Montana",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Joe_Montana"
   },
   {
     "question": "Which team drafted Aaron Rodgers?",
     "answer": "Packers",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Green_Bay_Packers"
   },
   {
     "question": "Who was the MVP of Super Bowl LVI?",
     "answer": "Cooper Kupp",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Cooper_Kupp"
   },
   {
     "question": "What NFL team is based in Arizona?",
     "answer": "Cardinals",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Arizona_Cardinals"
   },
   {
     "question": "Who replaced Bill Belichick as Patriots head coach?",
     "answer": "Jerod Mayo",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Jerod_Mayo"
   },
   {
     "question": "Which team is known as the 'Purple People Eaters'?",
     "answer": "Vikings",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Minnesota_Vikings"
   },
   {
     "question": "Which quarterback is famous for the 'Helmet Catch' Super Bowl?",
     "answer": "Eli Manning",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Eli_Manning"
   },
   {
     "question": "Which team’s mascot is named Swoop?",
     "answer": "Eagles",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Philadelphia_Eagles"
   },
   {
     "question": "Which team drafted Trevor Lawrence?",
     "answer": "Jaguars",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Jacksonville_Jaguars"
   },
   {
     "question": "Which NFL team has a fleur-de-lis on its helmet?",
     "answer": "Saints",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/New_Orleans_Saints"
   },
   {
     "question": "What team is based in Buffalo?",
     "answer": "Bills",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Buffalo_Bills"
   },
   {
     "question": "Which player holds the record for most career sacks?",
     "answer": "Bruce Smith",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Bruce_Smith"
   },
   {
     "question": "Which team did Randy Moss play for as a rookie?",
     "answer": "Vikings",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Minnesota_Vikings"
   },
   {
     "question": "Which NFL team has white horns on a purple helmet?",
     "answer": "Vikings",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Minnesota_Vikings"
   },
   {
     "question": "Which team plays at Ford Field?",
     "answer": "Lions",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Detroit_Lions"
   },
   {
     "question": "Which team was founded by George Halas?",
     "answer": "Bears",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Chicago_Bears"
   },
   {
     "question": "Which team won Super Bowl XL?",
     "answer": "Steelers",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Pittsburgh_Steelers"
   },
   {
     "question": "Which team did Deion Sanders win a Super Bowl with?",
     "answer": "49ers",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/San_Francisco_49ers"
   },
   {
     "question": "Which team was featured in the 'Music City Miracle'?",
     "answer": "Titans",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Tennessee_Titans"
   },
   {
     "question": "What is the term for when a player scores 6 points?",
     "answer": "Touchdown",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Touchdown"
   },
   {
     "question": "Which team plays at AT&T Stadium?",
     "answer": "Cowboys",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Dallas_Cowboys"
   },
   {
     "question": "Which team did Eli Manning refuse to play for when drafted?",
     "answer": "Chargers",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Los_Angeles_Chargers"
   },
   {
     "question": "Which team drafted Christian McCaffrey?",
     "answer": "Panthers",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Carolina_Panthers"
   },
   {
     "question": "Which team’s fans are known as the '12th Man'?",
     "answer": "Seahawks",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Seattle_Seahawks"
   },
   {
     "question": "Which player won NFL MVP for the 2022 season?",
     "answer": "Patrick Mahomes",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Patrick_Mahomes"
   },
   {
     "question": "Which stadium is shared by the Rams and Chargers?",
     "answer": "SoFi Stadium",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/SoFi_Stadium"
   },
   {
     "question": "Which team is the oldest in the NFL?",
     "answer": "Cardinals",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Arizona_Cardinals"
   },
   {
     "question": "Which team signed Tony Romo as an undrafted free agent?",
     "answer": "Cowboys",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Dallas_Cowboys"
   },
   {
     "question": "Which team wears silver and black?",
     "answer": "Raiders",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Las_Vegas_Raiders"
   },
   {
     "question": "What team plays in Charlotte, North Carolina?",
     "answer": "Panthers",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Carolina_Panthers"
   },
   {
     "question": "Which team has a horse named Thunder run on the field?",
     "answer": "Broncos",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Denver_Broncos"
   },
   {
     "question": "What is the name of the trophy given to the NFC Champion?",
     "answer": "George Halas Trophy",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/George_Halas_Trophy"
   },
   {
     "question": "Which team did Brett Favre start his career with?",
     "answer": "Falcons",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Atlanta_Falcons"
   },
   {
     "question": "Which team drafted Odell Beckham Jr.?",
     "answer": "Giants",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/New_York_Giants"
   },
   {
     "question": "Which NFL team plays in Kansas City?",
     "answer": "Chiefs",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Kansas_City_Chiefs"
   },
   {
     "question": "What team did the Houston Texans replace in the NFL?",
     "answer": "Oilers",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Houston_Oilers"
   },
   {
     "question": "Which team is known for the 'No Fly Zone' defense?",
     "answer": "Broncos",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Denver_Broncos"
   },
   {
     "question": "What is the maximum number of players on the field per team?",
     "answer": "11",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/American_football"
   },
   {
     "question": "Which team was formerly known as the Houston Oilers?",
     "answer": "Titans",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Tennessee_Titans"
   },
   {
     "question": "What team did Reggie White finish his career with?",
     "answer": "Panthers",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Carolina_Panthers"
   },
   {
     "question": "Who won Super Bowl XLIX?",
     "answer": "Patriots",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/New_England_Patriots"
   },
   {
     "question": "Who is the all-time leader in career interceptions?",
     "answer": "Paul Krause",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Paul_Krause"
   },
   {
     "question": "Which quarterback was nicknamed 'Broadway Joe'?",
     "answer": "Joe Namath",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Joe_Namath"
   },
   {
     "question": "Who caught the 'Helmet Catch' in Super Bowl XLII?",
     "answer": "David Tyree",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/David_Tyree"
   },
   {
     "question": "Which team has a dolphin as its mascot?",
     "answer": "Dolphins",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Miami_Dolphins"
   },
   {
     "question": "Which team has won the NFC East the most times?",
     "answer": "Cowboys",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Dallas_Cowboys"
   },
   {
     "question": "Which team has the 'Bolt Up' slogan?",
     "answer": "Chargers",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Los_Angeles_Chargers"
   },
   {
     "question": "Which city is home to the NFL Hall of Fame?",
     "answer": "Canton",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Pro_Football_Hall_of_Fame"
   },
   {
     "question": "How many points is a field goal worth?",
     "answer": "3",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Field_goal"
   },
   {
     "question": "How many points is a safety worth?",
     "answer": "2",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Safety_(gridiron_football_score)"
   },
   {
     "question": "How many points is an extra point kick worth?",
     "answer": "1",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Conversion_(gridiron_football)"
   },
   {
     "question": "How many points is a two point conversion worth?",
     "answer": "2",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Safety_(gridiron_football_score)"
   },
   {
     "question": "How many quarters are in an NFL game?",
     "answer": "4",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Glossary_of_American_football_terms"
   },
   {
     "question": "How many teams are in the NFL?",
     "answer": "32",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/National_Football_League"
   },
   {
     "question": "What are the NFL's two conferences called?",
     "answer": "AFC and NFC",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/National_Football_League"
   },
   {
     "question": "How many yards does an offense need to gain for a first down?",
     "answer": "10",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Down_(gridiron_football)"
   },
   {
     "question": "How many yards long is an NFL field between the goal lines?",
     "answer": "100",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/American_football_field"
   },
   {
     "question": "How many downs does an offense get to gain a first down?",
     "answer": "4",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Glossary_of_American_football_terms"
   },
   {
     "question": "What do the letters NFL stand for?",
     "answer": "National Football League",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/National_Football_League"
   },
   {
     "question": "How many games does each NFL team play in the regular season?",
     "answer": "17",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/National_Football_League"
   },
   {
     "question": "Which NFL team plays in Green Bay?",
     "answer": "Packers",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Green_Bay_Packers"
   },
   {
     "question": "Which NFL team plays in Detroit?",
     "answer": "Lions",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Detroit_Lions"
   },
   {
     "question": "Which NFL team plays in Cleveland?",
     "answer": "Browns",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Cleveland_Browns"
   },
   {
     "question": "Which NFL team plays in Baltimore?",
     "answer": "Ravens",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Baltimore_Ravens"
   },
   {
     "question": "Which NFL team plays in New Orleans?",
     "answer": "Saints",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/New_Orleans_Saints"
   },
   {
     "question": "Which NFL team plays in Jacksonville?",
     "answer": "Jaguars",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Jacksonville_Jaguars"
   },
   {
     "question": "Which NFL team plays in Cincinnati?",
     "answer": "Bengals",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Cincinnati_Bengals"
   },
   {
     "question": "Which NFL team plays in Indianapolis?",
     "answer": "Colts",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Indianapolis_Colts"
   },
   {
     "question": "Which NFL team plays in Tampa Bay?",
     "answer": "Buccaneers",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Tampa_Bay_Buccaneers"
   },
   {
     "question": "Which NFL team plays in Minnesota?",
     "answer": "Vikings",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Minnesota_Vikings"
   },
   {
     "question": "Which NFL team plays in Atlanta?",
     "answer": "Falcons",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Atlanta_Falcons"
   },
   {
     "question": "Which NFL team plays in Tennessee?",
     "answer": "Titans",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Tennessee_Titans"
   },
   {
     "question": "Which NFL team plays in Houston?",
     "answer": "Texans",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Houston_Texans"
   },
   {
     "question": "Which NFL team represents Washington, D.C.?",
     "answer": "Commanders",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Washington_Commanders"
   },
   {
     "question": "Which NFL team's helmet has no logo on it?",
     "answer": "Browns",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Cleveland_Browns"
   },
   {
     "question": "Which NFL team wears purple and gold?",
     "answer": "Vikings",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Minnesota_Vikings"
   },
   {
     "question": "Which NFL team is nicknamed 'Big Blue'?",
     "answer": "Giants",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/New_York_Giants"
   },
   {
     "question": "Which NFL team is nicknamed 'The Pack'?",
     "answer": "Packers",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Green_Bay_Packers"
   },
   {
     "question": "Which NFL team is named after the 1849 gold rush?",
     "answer": "49ers",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/San_Francisco_49ers"
   },
   {
     "question": "Which NFL team's fans wear foam cheese hats?",
     "answer": "Packers",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Green_Bay_Packers"
   },
   {
     "question": "Which two teams host a game every Thanksgiving Day?",
     "answer": "Lions and Cowboys",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/NFL_on_Thanksgiving_Day"
   },
   {
     "question": "In which month is the Super Bowl usually played?",
     "answer": "February",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Super_Bowl"
   },
   {
     "question": "Which position throws the ball to the receivers?",
     "answer": "Quarterback",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Quarterback"
   },
   {
     "question": "What is it called when the defense tackles the quarterback behind the line?",
     "answer": "Sack",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Quarterback_sack"
   },
   {
     "question": "What is it called when a defender catches a pass meant for the offense?",
     "answer": "Interception",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Interception"
   },
   {
     "question": "What is it called when a ball carrier drops the ball?",
     "answer": "Fumble",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Fumble"
   },
   {
     "question": "What is it called when the offense fails to gain 10 yards in four downs?",
     "answer": "Turnover on downs",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Turnover_(gridiron_football)"
   },
   {
     "question": "What do you call the official who runs an NFL game?",
     "answer": "Referee",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Official_(gridiron_football)"
   },
   {
     "question": "What is the yellow flag an official throws called?",
     "answer": "Penalty flag",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Penalty_(gridiron_football)"
   },
   {
     "question": "What is the line the offense starts each play from called?",
     "answer": "Line of scrimmage",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Line_of_scrimmage"
   },
   {
     "question": "What is the area a team must reach to score a touchdown called?",
     "answer": "End zone",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/End_zone"
   },
   {
     "question": "What color are the Cleveland Browns' helmets?",
     "answer": "Orange",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Color"
   },
   {
     "question": "Which NFL team is named after a black bird?",
     "answer": "Ravens",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Baltimore_Ravens"
   },
   {
     "question": "Which conference do the Kansas City Chiefs play in?",
     "answer": "AFC",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/American_Football_Conference"
   },
   {
     "question": "Which conference do the Dallas Cowboys play in?",
     "answer": "NFC",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/National_Football_Conference"
   },
   {
     "question": "Which NFL team's logo is a horseshoe?",
     "answer": "Colts",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Indianapolis_Colts"
   },
   {
     "question": "Which NFL team's logo is an arrowhead?",
     "answer": "Chiefs",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Kansas_City_Chiefs"
   },
   {
     "question": "Which NFL team has a pirate ship in its stadium?",
     "answer": "Buccaneers",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "source": "https://en.wikipedia.org/wiki/Tampa_Bay_Buccaneers"
   },
   {
     "question": "Which team won Super Bowl LVII?",
     "answer": "Chiefs",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Kansas_City_Chiefs"
   },
   {
     "question": "Which team won Super Bowl LVIII?",
     "answer": "Chiefs",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Kansas_City_Chiefs"
   },
   {
     "question": "Which team won Super Bowl LIX?",
     "answer": "Eagles",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Philadelphia_Eagles"
   },
   {
     "question": "Which team won Super Bowl LV?",
     "answer": "Buccaneers",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Tampa_Bay_Buccaneers"
   },
   {
     "question": "Which team did the Buccaneers beat in Super Bowl LV?",
     "answer": "Chiefs",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Kansas_City_Chiefs"
   },
   {
     "question": "Which team won Super Bowl LI after trailing 28-3?",
     "answer": "Patriots",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/New_England_Patriots"
   },
   {
     "question": "Which team lost Super Bowl LI after leading 28-3?",
     "answer": "Falcons",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Atlanta_Falcons"
   },
   {
     "question": "Which team ended the Patriots' perfect season in Super Bowl XLII?",
     "answer": "Giants",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/New_York_Giants"
   },
   {
     "question": "Which team went 16-0 in the 2007 regular season?",
     "answer": "Patriots",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/New_England_Patriots"
   },
   {
     "question": "Which team is the only one to finish a season undefeated and win the Super Bowl?",
     "answer": "Dolphins",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Miami_Dolphins"
   },
   {
     "question": "Which quarterback has won the most Super Bowls?",
     "answer": "Tom Brady",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Tom_Brady"
   },
   {
     "question": "How many Super Bowls did Tom Brady win?",
     "answer": "7",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Tom_Brady"
   },
   {
     "question": "In which round was Tom Brady drafted?",
     "answer": "Sixth",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Tom_Brady"
   },
   {
     "question": "Which head coach has won the most Super Bowls?",
     "answer": "Bill Belichick",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Bill_Belichick"
   },
   {
     "question": "Which team drafted Josh Allen?",
     "answer": "Bills",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Buffalo_Bills"
   },
   {
     "question": "Which team drafted Lamar Jackson?",
     "answer": "Ravens",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Baltimore_Ravens"
   },
   {
     "question": "Which team drafted Justin Herbert?",
     "answer": "Chargers",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Los_Angeles_Chargers"
   },
   {
     "question": "Which team drafted Saquon Barkley?",
     "answer": "Giants",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/New_York_Giants"
   },
   {
     "question": "Which team drafted Derrick Henry?",
     "answer": "Titans",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Tennessee_Titans"
   },
   {
     "question": "Which team drafted Micah Parsons?",
     "answer": "Cowboys",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Dallas_Cowboys"
   },
   {
     "question": "Which team drafted Travis Kelce?",
     "answer": "Chiefs",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Kansas_City_Chiefs"
   },
   {
     "question": "Which team drafted Aaron Donald?",
     "answer": "Rams",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Los_Angeles_Rams"
   },
   {
     "question": "Which player is nicknamed 'Gronk'?",
     "answer": "Rob Gronkowski",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Rob_Gronkowski"
   },
   {
     "question": "Which running back was nicknamed 'Beast Mode'?",
     "answer": "Marshawn Lynch",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Marshawn_Lynch"
   },
   {
     "question": "Which quarterback is nicknamed 'Big Ben'?",
     "answer": "Ben Roethlisberger",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Ben_Roethlisberger"
   },
   {
     "question": "Which player was nicknamed 'Prime Time'?",
     "answer": "Deion Sanders",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Deion_Sanders"
   },
   {
     "question": "Which player was nicknamed 'Sweetness'?",
     "answer": "Walter Payton",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Walter_Payton"
   },
   {
     "question": "Which player was nicknamed 'The Minister of Defense'?",
     "answer": "Reggie White",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Reggie_White"
   },
   {
     "question": "Which team plays at Gillette Stadium?",
     "answer": "Patriots",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/New_England_Patriots"
   },
   {
     "question": "Which team plays at Lumen Field?",
     "answer": "Seahawks",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Seattle_Seahawks"
   },
   {
     "question": "Which team plays at M&T Bank Stadium?",
     "answer": "Ravens",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Baltimore_Ravens"
   },
   {
     "question": "Which team plays at Empower Field at Mile High?",
     "answer": "Broncos",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Denver_Broncos"
   },
   {
     "question": "Which team plays at Hard Rock Stadium?",
     "answer": "Dolphins",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Miami_Dolphins"
   },
   {
     "question": "Which team plays at Highmark Stadium?",
     "answer": "Bills",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Buffalo_Bills"
   },
   {
     "question": "Which team plays at U.S. Bank Stadium?",
     "answer": "Vikings",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Minnesota_Vikings"
   },
   {
     "question": "Which team plays at Mercedes-Benz Stadium?",
     "answer": "Falcons",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Atlanta_Falcons"
   },
   {
     "question": "Which team plays at Caesars Superdome?",
     "answer": "Saints",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/New_Orleans_Saints"
   },
   {
     "question": "Which team plays at Allegiant Stadium?",
     "answer": "Raiders",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Las_Vegas_Raiders"
   },
   {
     "question": "Which team plays at Lincoln Financial Field?",
     "answer": "Eagles",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Philadelphia_Eagles"
   },
   {
     "question": "Which player holds the record for most career rushing yards?",
     "answer": "Emmitt Smith",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Emmitt_Smith"
   },
   {
     "question": "Which player holds the record for most career touchdowns?",
     "answer": "Jerry Rice",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Jerry_Rice"
   },
   {
     "question": "Which player holds the record for most career field goals?",
     "answer": "Adam Vinatieri",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Adam_Vinatieri"
   },
   {
     "question": "Which player holds the record for most career passing yards?",
     "answer": "Tom Brady",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Tom_Brady"
   },
   {
     "question": "Which team moved from St. Louis to Los Angeles in 2016?",
     "answer": "Rams",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Los_Angeles_Rams"
   },
   {
     "question": "Which team moved from San Diego to Los Angeles in 2017?",
     "answer": "Chargers",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Los_Angeles_Chargers"
   },
   {
     "question": "Which team moved from Cleveland to Baltimore in 1996?",
     "answer": "Ravens",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Baltimore_Ravens"
   },
   {
     "question": "Which team was the NFL's most recent expansion team?",
     "answer": "Texans",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Houston_Texans"
   },
   {
     "question": "Which team has won the most NFL championships counting the years before the Super Bowl?",
     "answer": "Packers",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Green_Bay_Packers"
   },
   {
     "question": "Which team did Peyton Manning win his second Super Bowl with?",
     "answer": "Broncos",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Denver_Broncos"
   },
   {
     "question": "Which player was taken first overall in the 2024 NFL Draft?",
     "answer": "Caleb Williams",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "source": "https://en.wikipedia.org/wiki/Caleb_Williams"
   },
   {
     "question": "Which player holds the record for most career rushing touchdowns?",
     "answer": "Emmitt Smith",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Emmitt_Smith"
   },
   {
     "question": "Which quarterback holds the record for most touchdown passes in a single season?",
     "answer": "Peyton Manning",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Peyton_Manning"
   },
   {
     "question": "How many touchdown passes did Peyton Manning throw in the 2013 season?",
     "answer": "55",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Peyton_Manning"
   },
   {
     "question": "Which player holds the record for most receptions in a single season?",
     "answer": "Michael Thomas",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Michael_Thomas"
   },
   {
     "question": "How many catches did Michael Thomas make in the 2019 season?",
     "answer": "149",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Michael_Thomas"
   },
   {
     "question": "Which kicker holds the record for the longest field goal in NFL history?",
     "answer": "Justin Tucker",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Justin_Tucker"
   },
   {
     "question": "How long was the longest field goal in NFL history?",
     "answer": "66 yards",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Justin_Tucker"
   },
   {
     "question": "Which player holds the single season sack record?",
     "answer": "Michael Strahan",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Michael_Strahan"
   },
   {
     "question": "How many sacks did Michael Strahan record in the 2001 season?",
     "answer": "22.5",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Michael_Strahan"
   },
   {
     "question": "Who was the first player to rush for 2,000 yards in a season?",
     "answer": "O.J. Simpson",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/O._J._Simpson"
   },
   {
     "question": "Which team drafted Jerry Rice?",
     "answer": "49ers",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/San_Francisco_49ers"
   },
   {
     "question": "Which college did Jerry Rice attend?",
     "answer": "Mississippi Valley State",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Mississippi_Valley_State_University"
   },
   {
     "question": "Who was taken first overall in the 1998 NFL Draft?",
     "answer": "Peyton Manning",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Peyton_Manning"
   },
   {
     "question": "Who was taken second overall in the 1998 NFL Draft?",
     "answer": "Ryan Leaf",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Ryan_Leaf"
   },
   {
     "question": "Who was taken first overall in the 1999 NFL Draft?",
     "answer": "Tim Couch",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Tim_Couch"
   },
   {
     "question": "Which quarterback was taken first overall in the 2001 NFL Draft?",
     "answer": "Michael Vick",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Michael_Vick"
   },
   {
     "question": "Which quarterback led 'The Drive' in the 1986 AFC Championship Game?",
     "answer": "John Elway",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/John_Elway"
   },
   {
     "question": "Which team lost 'The Catch' game to the 49ers in the 1981 NFC Championship?",
     "answer": "Cowboys",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Dallas_Cowboys"
   },
   {
     "question": "Who caught 'The Catch' for the 49ers?",
     "answer": "Dwight Clark",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Dwight_Clark"
   },
   {
     "question": "Which team suffered 'The Fumble' in the 1987 AFC Championship Game?",
     "answer": "Browns",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Cleveland_Browns"
   },
   {
     "question": "Which player fumbled in 'The Fumble'?",
     "answer": "Earnest Byner",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Earnest_Byner"
   },
   {
     "question": "Which kicker missed 'Wide Right' in Super Bowl XXV?",
     "answer": "Scott Norwood",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Scott_Norwood"
   },
   {
     "question": "How many Super Bowls in a row did the Buffalo Bills lose?",
     "answer": "4",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Glossary_of_American_football_terms"
   },
   {
     "question": "Who is the NFL's all-time leading scorer?",
     "answer": "Adam Vinatieri",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Adam_Vinatieri"
   },
   {
     "question": "Which quarterback holds the record for most consecutive starts?",
     "answer": "Brett Favre",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Brett_Favre"
   },
   {
     "question": "How many consecutive starts did Brett Favre make?",
     "answer": "297",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Brett_Favre"
   },
   {
     "question": "Which quarterback threw the most interceptions in NFL history?",
     "answer": "Brett Favre",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Brett_Favre"
   },
   {
     "question": "Who was the first Black quarterback to win a Super Bowl?",
     "answer": "Doug Williams",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Doug_Williams"
   },
   {
     "question": "Which team did Doug Williams win a Super Bowl with?",
     "answer": "Washington",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Washington_Commanders"
   },
   {
     "question": "Which linebacker was named MVP of Super Bowl XXXV?",
     "answer": "Ray Lewis",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Ray_Lewis"
   },
   {
     "question": "Who was the first player to run 99 yards from scrimmage?",
     "answer": "Tony Dorsett",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Tony_Dorsett"
   },
   {
     "question": "What is the longest run from scrimmage in NFL history, in yards?",
     "answer": "99",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Tony_Dorsett"
   },
   {
     "question": "Which running back holds the record for most rushing yards in a single game?",
     "answer": "Adrian Peterson",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Adrian_Peterson"
   },
   {
     "question": "How many rushing yards did Adrian Peterson gain in that record game?",
     "answer": "296",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Adrian_Peterson"
   },
   {
     "question": "Which team did Kurt Warner lead to a Super Bowl win?",
     "answer": "Rams",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Los_Angeles_Rams"
   },
   {
     "question": "What was the Rams' high scoring offense of 1999 called?",
     "answer": "The Greatest Show on Turf",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/The_Greatest_Show_on_Turf"
   },
   {
     "question": "Which team ran the '46 defense' in 1985?",
     "answer": "Bears",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Chicago_Bears"
   },
   {
     "question": "Who was the defensive coordinator of the 1985 Bears?",
     "answer": "Buddy Ryan",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Buddy_Ryan"
   },
   {
     "question": "Which secondary was known as 'The Legion of Boom'?",
     "answer": "Seahawks",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Seattle_Seahawks"
   },
   {
     "question": "Which team's offensive line was known as 'The Hogs'?",
     "answer": "Washington",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Washington_Commanders"
   },
   {
     "question": "In which year did the NFL and the AFL merge?",
     "answer": "1970",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/AFL%E2%80%93NFL_merger"
   },
   {
     "question": "What was the first Super Bowl officially called at the time?",
     "answer": "AFL-NFL World Championship Game",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Super_Bowl"
   },
   {
     "question": "Which team won the final AFL Championship?",
     "answer": "Chiefs",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Kansas_City_Chiefs"
   },
   {
     "question": "Which four NFL teams have never played in a Super Bowl?",
     "answer": "Browns, Lions, Jaguars and Texans",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Super_Bowl"
   },
   {
     "question": "Which company makes the Lombardi Trophy?",
     "answer": "Tiffany & Co.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Tiffany_&_Co."
   },
   {
     "question": "Which player holds the record for most punt return touchdowns?",
     "answer": "Devin Hester",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Devin_Hester"
   },
   {
     "question": "Which player has been selected to the most Pro Bowls?",
     "answer": "Tom Brady",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Tom_Brady"
   },
   {
     "question": "Which quarterback was the youngest to win a Super Bowl as a starter?",
     "answer": "Ben Roethlisberger",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Ben_Roethlisberger"
   },
   {
     "question": "Which team has retired the most jersey numbers?",
     "answer": "Bears",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Chicago_Bears"
   },
   {
     "question": "Which head coach has the most career wins in NFL history?",
     "answer": "Don Shula",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "source": "https://en.wikipedia.org/wiki/Don_Shula"
   }
 ]
